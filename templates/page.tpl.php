@@ -75,14 +75,6 @@
  */
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-    <div class="row">
-        <div class="col-md-3">
-            <?php print render($page['jirheader_logo']); ?>
-        </div>
-        <div class="col-md-9">
-            <?php print render($page['jirheader_banner']); ?>
-        </div>
-    </div>
     <div class="<?php print $container_class; ?>">
         <div class="navbar-header">
             <?php if ($logo): ?>
@@ -110,8 +102,6 @@
 <!--            --><?php //endif; ?>
             <?php print render($page['jirheader_banner']); ?>
         </div>
-
-        <?php print render($page['jirheader_banner']); ?>
 
 <!--        --><?php //if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
 <!--            <div class="navbar-collapse collapse" id="navbar-collapse">-->
