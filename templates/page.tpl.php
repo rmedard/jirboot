@@ -74,7 +74,7 @@
  * @ingroup templates
  */
 ?>
-<div class="<?php print $container_class; ?>">
+<div>
     <div class="row">
         <div class="col-md-3">
             <?php if ($logo): ?>
