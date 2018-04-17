@@ -121,6 +121,9 @@
 </header>
 
 <div class="main-container <?php print $container_class; ?>">
+    <div class="row">
+        <?php print render($page['jirheader']); ?>
+    </div>
 
     <header role="banner" id="page-header">
         <?php if (!empty($site_slogan)): ?>
