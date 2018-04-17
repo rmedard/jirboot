@@ -122,7 +122,12 @@
 
 <div class="main-container <?php print $container_class; ?>">
     <div class="row">
-        <?php print render($page['jirheader']); ?>
+        <div class="col-md-3">
+            <?php print render($page['jirheader_logo']); ?>
+        </div>
+        <div class="col-md-9">
+            <?php print render($page['jirheader_banner']); ?>
+        </div>
     </div>
 
     <header role="banner" id="page-header">

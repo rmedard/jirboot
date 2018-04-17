@@ -8,7 +8,8 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[jirheader]     = 'JIR Header'
+regions[jirheader_logo]     = 'JIR Header Logo'
+regions[jirheader_banner]     = 'JIR Header Banner'
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
