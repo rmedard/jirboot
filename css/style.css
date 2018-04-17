@@ -7553,3 +7553,6 @@ body header#navbar {
 #super-container div.container-fluid {
   padding: inherit;
 }
+ul.media-list li.media > div.media-left {
+  width: 19%;
+}
