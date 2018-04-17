@@ -102,7 +102,7 @@
 
 <div id="super-container">
     <div class="container-fluid">
-        <div class="container">
+<!--        <div>-->
             <div class="<?php print $navbar_classes; ?>">
                 <div class="container">
                     <div class="navbar-header">
@@ -143,7 +143,7 @@
 <!--                --><?php //print render($page['header']); ?>
 <!--            </header> -->
             <!-- /#page-header -->
-        </div>
+<!--        </div>-->
     </div>
 
 
