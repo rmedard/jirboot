@@ -7543,7 +7543,13 @@ a .glyphicon.icon-after {
   margin-left: .25em;
   margin-right: -0.25em;
 }
+body header#navbar {
+  background-color: white;
+}
 #super-container {
   position: relative;
   top: 110px;
+}
+#super-container div.container-fluid {
+  padding: inherit;
 }
