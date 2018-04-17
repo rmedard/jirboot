@@ -139,7 +139,8 @@
 <!--                --><?php //endif; ?>
 <!---->
 <!--                --><?php //print render($page['header']); ?>
-<!--            </header> <!-- /#page-header -->-->
+<!--            </header> -->
+            <!-- /#page-header -->
         </div>
     </div>
 
