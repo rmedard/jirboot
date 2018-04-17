@@ -74,7 +74,7 @@
  * @ingroup templates
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" role="banner">
     <div class="<?php print $container_class; ?>">
         <div class="row">
             <div class="col-md-3">
@@ -101,7 +101,7 @@
 </header>
 
 <div class="main-container <?php print $container_class; ?>">
-    <div class="navbar">
+    <div class="<?php print $navbar_classes; ?>">
         <div class="navbar-header">
             <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
                 <button type="button" class="navbar-toggle"
