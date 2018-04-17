@@ -97,7 +97,11 @@
                 <?php print render($page['jirheader_banner']); ?>
             </div>
         </div>
+    </div>
+</header>
 
+<div class="main-container <?php print $container_class; ?>">
+    <div class="navbar">
         <div class="navbar-header">
             <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
                 <button type="button" class="navbar-toggle"
@@ -125,9 +129,6 @@
             <?php endif; ?>
         </div>
     </div>
-</header>
-
-<div class="main-container <?php print $container_class; ?>">
 
     <header role="banner" id="page-header">
         <?php if (!empty($site_slogan)): ?>
