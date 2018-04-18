@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+(function ($) {
     $('body').css('color', 'red');
     if (window.matchMedia("(min-width: 400px)").matches) {
         $('body').css('background-color', 'blue');
@@ -9,4 +8,4 @@ $(document).ready(function(){
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-justified');
         /* the viewport is less than 400 pixels wide */
     }
-});
+}(jQuery));
