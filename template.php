@@ -6,7 +6,7 @@ include ('parser/simple_html_dom.php');
  * The primary PHP file for this theme.
  */
 
-function jirboot_preprocess_block($variables){
+function jirboot_preprocess_block(&$variables){
     if ($variables['block']->delta == 'menu-jobs-menu'){
         print_r($variables['content']);
         $jobs_menu = menu_load_links('menu-jobs-menu');
