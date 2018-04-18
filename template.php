@@ -11,6 +11,9 @@ function jirboot_preprocess_block($variables){
 //        $all_menu = menu_load_all();
 //        $jobs_menu = menu_tree_all_data('menu-jobs-menu');
         $jobs_menu = menu_load_links('menu-jobs-menu');
-        print_r($jobs_menu);
+
+        foreach ($jobs_menu as $key => $menu){
+            var_dump('Title: ' . $menu['link_title'] . ' Path: ' . $menu['link_path']);
+        }
     }
 }
