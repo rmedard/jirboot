@@ -6,6 +6,10 @@ include ('parser/simple_html_dom.php');
  * The primary PHP file for this theme.
  */
 
+function jirboot_preprocess_page(&$variables){
+    var_dump($variables['content_column_class']);
+}
+
 function jirboot_preprocess_block(&$variables){
     if ($variables['block']->delta == 'menu-jobs-menu'){
         print_r($variables['content']);
@@ -33,15 +37,6 @@ function jirboot_preprocess_block(&$variables){
                         ->count()->execute();
                     $menu['jobs_count'] = $alljobs;
                     break;
-                case 'jobs/consultancy':
-                    $query8 = new EntityFieldQuery();
-                    $consultancy = $query8->entityCondition('entity_type', 'node')
-                        ->entityCondition('bundle', 'job')
-                        ->propertyCondition('status', NODE_PUBLISHED)
-                        ->fieldCondition('field_offer_type', 'value', 'Consultancy')
-                        ->count()->execute();
-                    $menu['jobs_count'] = $consultancy;
-                    break;
                 case 'jobs/tender':
                     $query3 = new EntityFieldQuery();
                     $tenders = $query3->entityCondition('entity_type', 'node')
@@ -50,6 +45,15 @@ function jirboot_preprocess_block(&$variables){
                         ->fieldCondition('field_offer_type', 'value', 'Tender')
                         ->count()->execute();
                     $menu['jobs_count'] = $tenders;
+                    break;
+                case 'jobs/consultancy':
+                    $query8 = new EntityFieldQuery();
+                    $consultancy = $query8->entityCondition('entity_type', 'node')
+                        ->entityCondition('bundle', 'job')
+                        ->propertyCondition('status', NODE_PUBLISHED)
+                        ->fieldCondition('field_offer_type', 'value', 'Consultancy')
+                        ->count()->execute();
+                    $menu['jobs_count'] = $consultancy;
                     break;
                 case 'jobs/internships':
                     $query4 = new EntityFieldQuery();
