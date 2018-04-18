@@ -56,6 +56,6 @@
 
     <?php print $content ?>
 
-    <?php dpm(get_defined_vars()); ?>
+    <?php dpm($content); ?>
 
 </section>
