@@ -82,6 +82,7 @@ function jirboot_preprocess_block($variables){
 //            }
         }
         $output .= '</ul>';
+        var_dump($output);
         $variables['content'] = $output;
     }
 }
