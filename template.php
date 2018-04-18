@@ -6,10 +6,7 @@ include ('parser/simple_html_dom.php');
  * The primary PHP file for this theme.
  */
 
-function jirboot_preprocess_page(&$variables){
-}
-
-function jirboot_bootstrap_preprocess_page(&$variables) {
+function jirboot_preprocess_page(&$variables) {
     // Add information about the number of sidebars.
     if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
         $variables['content_column_class'] = ' class="col-sm-8"';
