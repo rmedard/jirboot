@@ -8,7 +8,7 @@ include ('parser/simple_html_dom.php');
 
 function jirboot_preprocess_page(&$variables){
 //    var_dump($variables['content_column_class']);
-    $variables['content_column_class'] = 'col-sm-9';
+    $variables['content_column_class'] = 'col-sm-8';
 }
 
 function jirboot_preprocess_block(&$variables){
