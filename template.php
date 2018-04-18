@@ -10,6 +10,8 @@ function jirboot_preprocess_block($variables){
     if ($variables['block']->delta == 'menu-jobs-menu'){
         $jobs_menu = menu_load_links('menu-jobs-menu');
 
+        $output = '<ul class="nav nav-tabs">';
+
         foreach ($jobs_menu as $key => $menu){
             switch ($menu['link_path']){
                 case 'jobs/featured':
@@ -32,7 +34,9 @@ function jirboot_preprocess_block($variables){
                     break;
             }
 
-            var_dump('Title: ' . $menu['link_title'] . ' Path: ' . $menu['link_path'] . ' Count: ' . $menu['jobs_count']);
+            $output .= '<li role="presentation"><a href="'. $menu['link_path'] .'">' . $menu['link_title'] . ' <span class="badge">'. $menu['jobs_count'] .'</span></a></li>';
+
+
 
 
 //            $query8 = new EntityFieldQuery();
@@ -80,5 +84,6 @@ function jirboot_preprocess_block($variables){
 //                    ->count()->execute();
 //            }
         }
+        $variables['content'] = $output;
     }
 }
