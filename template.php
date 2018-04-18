@@ -11,8 +11,6 @@ function jirboot_preprocess_block($variables){
         $jobs_menu = menu_load_links('menu-jobs-menu');
 
         foreach ($jobs_menu as $key => $menu){
-//            var_dump('Title: ' . $menu['link_title'] . ' Path: ' . $menu['link_path']);
-
             switch ($menu['link_path']){
                 case 'jobs/featured':
                     $query1 = new EntityFieldQuery();
@@ -34,7 +32,7 @@ function jirboot_preprocess_block($variables){
                     break;
             }
 
-            var_dump($menu);
+            var_dump('Title: ' . $menu['link_title'] . ' Path: ' . $menu['link_path'] . ' Count: ' . $menu['jobs_count']);
 
 
 //            $query8 = new EntityFieldQuery();
