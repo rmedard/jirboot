@@ -1,6 +1,5 @@
 <?php
 
-include ('parser/simple_html_dom.php');
 /**
  * @file
  * The primary PHP file for this theme.
