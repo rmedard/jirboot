@@ -7,5 +7,5 @@ include ('parser/simple_html_dom.php');
  */
 
 function jirboot_preprocess_block($variables){
-    dpm($variables);
+    var_dump($variables);
 }
