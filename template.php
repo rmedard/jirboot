@@ -7,5 +7,6 @@ include ('parser/simple_html_dom.php');
  */
 
 function jirboot_preprocess_block($variables){
-    dpm($variables);
+    print_r($variables['block']->delta);
+    print_r($variables['block']->module);
 }
