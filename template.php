@@ -33,53 +33,65 @@ function jirboot_preprocess_block(&$variables){
                         ->count()->execute();
                     $menu['jobs_count'] = $alljobs;
                     break;
+                case 'jobs/consultancy':
+                    $query8 = new EntityFieldQuery();
+                    $consultancy = $query8->entityCondition('entity_type', 'node')
+                        ->entityCondition('bundle', 'job')
+                        ->propertyCondition('status', NODE_PUBLISHED)
+                        ->fieldCondition('field_offer_type', 'value', 'Consultancy')
+                        ->count()->execute();
+                    $menu['jobs_count'] = $consultancy;
+                    break;
+                case 'jobs/tender':
+                    $query3 = new EntityFieldQuery();
+                    $tenders = $query3->entityCondition('entity_type', 'node')
+                        ->entityCondition('bundle', 'job')
+                        ->propertyCondition('status', NODE_PUBLISHED)
+                        ->fieldCondition('field_offer_type', 'value', 'Tender')
+                        ->count()->execute();
+                    $menu['jobs_count'] = $tenders;
+                    break;
+                case 'jobs/internships':
+                    $query4 = new EntityFieldQuery();
+                    $intern = $query4->entityCondition('entity_type', 'node')
+                        ->entityCondition('bundle', 'job')
+                        ->propertyCondition('status', NODE_PUBLISHED)
+                        ->fieldCondition('field_offer_type', 'value', 'Internship')
+                        ->count()->execute();
+                    $menu['jobs_count'] = $intern;
+                    break;
+                case 'jobs/public-adverts':
+                    $query6 = new EntityFieldQuery();
+                    $emps = $query6->entityCondition('entity_type', 'node')
+                        ->entityCondition('bundle', 'employer')
+                        ->propertyCondition('status', NODE_PUBLISHED)
+                        ->fieldCondition('field_employer_public_employer', 'value', 1)->execute();
+                    $publics = 0;
+                    if (isset($emps['node'])) {
+                        $emps_ids = array_keys($emps['node']);
+                        $query7 = new EntityFieldQuery();
+                        $publics = $query7->entityCondition('entity_type', 'node')
+                            ->entityCondition('bundle', 'job')
+                            ->propertyCondition('status', NODE_PUBLISHED)
+                            ->fieldCondition('field_employer', 'target_id', $emps_ids, 'IN')
+                            ->count()->execute();
+                    }
+                    $menu['jobs_count'] = $publics;
+                    break;
+                case 'jobs/others':
+                    $query5 = new EntityFieldQuery();
+                    $others = $query5->entityCondition('entity_type', 'node')
+                        ->entityCondition('bundle', 'job')
+                        ->propertyCondition('status', NODE_PUBLISHED)
+                        ->fieldCondition('field_offer_type', 'value', 'Other')
+                        ->count()->execute();
+                    $menu['jobs_count'] = $others;
+                    break;
             }
 
-            $output .= '<li role="presentation"><a href="'. $menu['link_path'] .'">' . $menu['link_title'] . ' <span class="badge">'. $menu['jobs_count'] .'</span></a></li>';
-//            $query8 = new EntityFieldQuery();
-//            $consultancy = $query8->entityCondition('entity_type', 'node')
-//                ->entityCondition('bundle', 'job')
-//                ->propertyCondition('status', NODE_PUBLISHED)
-//                ->fieldCondition('field_offer_type', 'value', 'Consultancy')
-//                ->count()->execute();
-//
-//            $query3 = new EntityFieldQuery();
-//            $tenders = $query3->entityCondition('entity_type', 'node')
-//                ->entityCondition('bundle', 'job')
-//                ->propertyCondition('status', NODE_PUBLISHED)
-//                ->fieldCondition('field_offer_type', 'value', 'Tender')
-//                ->count()->execute();
-//
-//            $query4 = new EntityFieldQuery();
-//            $intern = $query4->entityCondition('entity_type', 'node')
-//                ->entityCondition('bundle', 'job')
-//                ->propertyCondition('status', NODE_PUBLISHED)
-//                ->fieldCondition('field_offer_type', 'value', 'Internship')
-//                ->count()->execute();
-//
-//            $query5 = new EntityFieldQuery();
-//            $others = $query5->entityCondition('entity_type', 'node')
-//                ->entityCondition('bundle', 'job')
-//                ->propertyCondition('status', NODE_PUBLISHED)
-//                ->fieldCondition('field_offer_type', 'value', 'Other')
-//                ->count()->execute();
-//
-//            $query6 = new EntityFieldQuery();
-//            $emps = $query6->entityCondition('entity_type', 'node')
-//                ->entityCondition('bundle', 'employer')
-//                ->propertyCondition('status', NODE_PUBLISHED)
-//                ->fieldCondition('field_employer_public_employer', 'value', 1)->execute();
-//
-//            $publics = 0;
-//            if (isset($emps['node'])) {
-//                $emps_ids = array_keys($emps['node']);
-//                $query7 = new EntityFieldQuery();
-//                $publics = $query7->entityCondition('entity_type', 'node')
-//                    ->entityCondition('bundle', 'job')
-//                    ->propertyCondition('status', NODE_PUBLISHED)
-//                    ->fieldCondition('field_employer', 'target_id', $emps_ids, 'IN')
-//                    ->count()->execute();
-//            }
+            if (intval($menu['jobs_count']) > 0) {
+                $output .= '<li role="presentation"><a href="'. $menu['link_path'] .'">' . $menu['link_title'] . ' <span class="badge">'. $menu['jobs_count'] .'</span></a></li>';
+            }
         }
         $output .= '</ul>';
         $variables['content'] = $output;
