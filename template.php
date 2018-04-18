@@ -8,6 +8,8 @@ include ('parser/simple_html_dom.php');
 
 function jirboot_preprocess_block($variables){
     if ($variables['block']->delta == 'menu-jobs-menu'){
-        print_r($variables['block']->module);
+        $all_menu = menu_load_all();
+        $jobs_menu = $all_menu['menu-jobs-menu'];
+        print_r($jobs_menu);
     }
 }
