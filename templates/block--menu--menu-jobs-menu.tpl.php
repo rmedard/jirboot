@@ -56,7 +56,6 @@
 
     <?php print $content ?>
 
-    <?php dpm($block['subject']); ?>
     <?php dpm($content); ?>
 
 </section>
