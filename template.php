@@ -7,5 +7,7 @@ include ('parser/simple_html_dom.php');
  */
 
 function jirboot_preprocess_block($variables){
-    print_r($variables['block']->delta);
+    if ($variables['block']->delta == 'menu-jobs-menu'){
+        print_r($variables['block']->module);
+    }
 }
