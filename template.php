@@ -36,7 +36,6 @@ function jirboot_preprocess_block(&$variables){
             }
 
             $output .= '<li role="presentation"><a href="'. $menu['link_path'] .'">' . $menu['link_title'] . ' <span class="badge">'. $menu['jobs_count'] .'</span></a></li>';
-
 //            $query8 = new EntityFieldQuery();
 //            $consultancy = $query8->entityCondition('entity_type', 'node')
 //                ->entityCondition('bundle', 'job')
