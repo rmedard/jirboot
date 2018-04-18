@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     if (window.matchMedia("(min-width: 400px)").matches) {
+        $('body').css('background-color', 'blue');
         /* the viewport is at least 400 pixels wide */
     } else {
         $('body').css('background-color', 'red');
