@@ -7825,5 +7825,8 @@ body header#navbar {
   padding: inherit;
 }
 ul.media-list li.media > div.media-left {
-  width: 19%;
+  width: 14%;
+}
+section#block-menu-menu-jobs-menu ul.nav > li > a {
+  padding: 10px 5px;
 }
