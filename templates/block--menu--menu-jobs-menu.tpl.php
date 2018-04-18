@@ -56,4 +56,6 @@
 
     <?php print $content ?>
 
+    <?php dpm(get_defined_vars()); ?>
+
 </section>
