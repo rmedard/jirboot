@@ -1,8 +1,10 @@
 $(document).ready(function(){
-    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-    if (isMobile.matches) {
+    if (window.matchMedia("(min-width: 400px)").matches) {
+        /* the viewport is at least 400 pixels wide */
+    } else {
         $('body').css('background-color', 'red');
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-justified');
+        /* the viewport is less than 400 pixels wide */
     }
 });
