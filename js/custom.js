@@ -8,4 +8,4 @@
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-justified');
         /* the viewport is less than 400 pixels wide */
     }
-}(jQuery));
+})(jQuery);
