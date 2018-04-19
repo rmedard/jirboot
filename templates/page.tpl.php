@@ -146,7 +146,6 @@
         <div class="container-fluid">
             <div class="navbar navbar-static-top navbar-default">
                 <div class="container">
-<!--                    <div class="navbar-header">-->
                         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
 <!--                            <div class="navbar-collapse collapse"-->
 <!--                                 id="navbar-collapse">-->
@@ -163,7 +162,7 @@
                                 </nav>
 <!--                            </div>-->
                         <?php endif; ?>
-<!--                    </div>-->
+
                 </div>
             </div>
         </div>
