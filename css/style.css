@@ -7824,6 +7824,9 @@ a.list-group-item-danger.active:focus {
 }
 /* Small devices (phones, 768px and down) */
 @media (max-width: 768px) {
+  header#navbar > div#upper-top-header {
+    background: #2C3E50;
+  }
   img#logo-img {
     height: 44px;
   }
@@ -7842,9 +7845,6 @@ body header#navbar {
   max-height: 110px;
   background-color: white;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33);
-}
-body header#navbar > div#upper-top-header {
-  background: #2C3E50;
 }
 #super-container {
   position: relative;
