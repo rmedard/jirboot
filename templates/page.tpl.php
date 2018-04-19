@@ -123,7 +123,7 @@
             <?php endif; ?>
         </div>
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-            <div class="navbar-collapse collapse"
+            <div class="navbar-collapse collapse mobile-menu"
                  id="navbar-collapse">
                 <nav role="navigation">
                     <?php if (!empty($primary_nav)): ?>
@@ -148,8 +148,7 @@
                 <div class="container">
 <!--                    <div class="navbar-header">-->
                         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-                            <div class="navbar-collapse collapse"
-                                 id="navbar-collapse">
+                            <div class="navbar-collapse collapse desk-menu" id="navbar-collapse">
                                 <nav role="navigation">
                                     <?php if (!empty($primary_nav)): ?>
                                         <?php print render($primary_nav); ?>
