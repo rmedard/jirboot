@@ -7875,6 +7875,9 @@ a.list-group-item-danger.active:focus {
   form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-field-category-tid-wrapper {
     width: 70%;
   }
+  button#menu-toggle-btn > span span {
+    background: #2C3E50;
+  }
 }
 body header#navbar {
   max-height: '110px';
