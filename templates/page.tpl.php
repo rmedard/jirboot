@@ -122,7 +122,7 @@
                 </button>
             <?php endif; ?>
         </div>
-        <div class="col-sm-9 col-xs-12 pull-right" id="banner-region">
+        <div class="col-sm-9 pull-right" id="desk-banner-region">
             <?php print render($page['jirheader_banner']); ?>
         </div>
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -147,6 +147,9 @@
 <div id="super-container">
     <div class="super-header">
         <div class="container-fluid">
+            <div class="col-xs-12" id="mobile-banner-region">
+                <?php print render($page['jirheader_banner']); ?>
+            </div>
             <div class="navbar navbar-static-top navbar-default">
                 <div class="container">
 <!--                    <div class="navbar-header">-->

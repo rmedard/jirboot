@@ -7824,8 +7824,11 @@ a.list-group-item-danger.active:focus {
   header#navbar > div#upper-top-header div.mobile-menu > nav > ul {
     display: none;
   }
-  div#banner-region {
+  div#desk-banner-region {
     padding-right: 0;
+  }
+  div#mobile-banner-region {
+    display: none;
   }
   img.banner-img {
     width: 100%;
@@ -7839,6 +7842,9 @@ a.list-group-item-danger.active:focus {
   }
   img#logo-img {
     height: 44px;
+  }
+  div#desk-banner-region {
+    display: none;
   }
   section#block-system-main {
     margin-top: 10px;
