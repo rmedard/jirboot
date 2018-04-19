@@ -7826,7 +7826,8 @@ body header#navbar {
   padding: inherit;
 }
 ul.media-list li.media {
-  border-bottom: solid 2px #7b8a8b;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #b4bcc2;
 }
 ul.media-list li.media div.media-left {
   width: 14%;
@@ -7835,7 +7836,6 @@ section#block-menu-menu-jobs-menu ul.nav > li > a {
   padding: 10px 5px;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
-  padding-bottom: 5px;
   border-bottom: 1px solid #7b8a8b;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row span.field-content {
