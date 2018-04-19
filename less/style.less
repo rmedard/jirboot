@@ -6,6 +6,9 @@
 @import "bootswatch/bootswatch";
 @import "bootswatch/variables";
 
+
+@header-height: '110px';
+
 /* wider devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
     section#block-menu-menu-jobs-menu {
@@ -28,6 +31,7 @@
     }
     img.banner-img{
         width: 100%;
+        max-height: @header-height;
     }
 }
 
@@ -56,7 +60,7 @@
 
 body {
     header#navbar {
-        max-height: 110px;
+        max-height: @header-height;
         background-color: white;
         box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33);
     }
