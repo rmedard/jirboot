@@ -74,31 +74,6 @@
  * @ingroup templates
  */
 ?>
-<!--<header id="navbar" role="banner" class="navbar-fixed-top">-->
-<!--    <div class="--><?php //print $container_class; ?><!--">-->
-<!--        <div class="row">-->
-<!--            <div class="col-sm-3 col-xs-12">-->
-<!--                --><?php //if ($logo): ?>
-<!--                    <a class="logo navbar-btn pull-left"-->
-<!--                       href="--><?php //print $front_page; ?><!--"-->
-<!--                       title="--><?php //print t('Home'); ?><!--">-->
-<!--                        <img src="--><?php //print $logo; ?><!--" id="logo"-->
-<!--                             alt="--><?php //print t('Home'); ?><!--"/>-->
-<!--                    </a>-->
-<!--                --><?php //endif; ?>
-<!---->
-<!--                --><?php //if (!empty($site_name)): ?>
-<!--                    <a class="name navbar-brand"-->
-<!--                       href="--><?php //print $front_page; ?><!--"-->
-<!--                       title="--><?php //print t('Home'); ?><!--">--><?php //print $site_name; ?><!--</a>-->
-<!--                --><?php //endif; ?>
-<!--            </div>-->
-<!--            <div class="col-sm-9 col-xs-12">-->
-<!--                --><?php //print render($page['jirheader_banner']); ?>
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</header>-->
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
     <div class="<?php print $container_class; ?>" id="upper-top-header">
@@ -185,7 +160,6 @@
                 </div>
             </header>
         </div>
-        <!-- /#page-header -->
 
         <div class="main-container <?php print $container_class; ?>">
             <div class="row">
