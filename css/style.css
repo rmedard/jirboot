@@ -7838,12 +7838,12 @@ section.block .block-title {
   font-size: 22px;
   text-align: center;
 }
-ul.media-list li.media {
-  padding-bottom: 5px;
-  border-bottom: solid 2px #b4bcc2;
-}
 ul.media-list li.media div.media-left {
   width: 14%;
+}
+ul.media-list li.media :not(:last-child) {
+  padding-bottom: 5px;
+  border-bottom: solid 2px #b4bcc2;
 }
 section#block-menu-menu-jobs-menu ul.nav li > a {
   border-bottom: 2px solid #2C3E50;
