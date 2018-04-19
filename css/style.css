@@ -7840,7 +7840,7 @@ body header#navbar {
   background-color: white;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.34);
 }
-body header#upper-top-header {
+body header#navbar > div#upper-top-header {
   background: #2C3E50;
 }
 #super-container {
