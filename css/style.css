@@ -7838,7 +7838,7 @@ a.list-group-item-danger.active:focus {
 body header#navbar {
   max-height: 110px;
   background-color: white;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.34);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33);
 }
 body header#navbar > div#upper-top-header {
   background: #2C3E50;
