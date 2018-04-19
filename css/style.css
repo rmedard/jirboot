@@ -7819,6 +7819,7 @@ a.list-group-item-danger.active:focus {
   section#block-menu-menu-jobs-menu ul.nav-tabs.nav-justified li a,
   section#block-menu-menu-jobs-menu ul.nav-tabs.nav-justified li.active a {
     border-bottom: 2px solid #2C3E50;
+    padding: 10px 5px;
   }
 }
 body header#navbar {
@@ -7851,9 +7852,6 @@ ul.media-list li.media > div.media-left {
 ul.media-list li.media:not(:last-child) {
   padding-bottom: 5px;
   border-bottom: solid 2px #b4bcc2;
-}
-section#block-menu-menu-jobs-menu ul.nav li > a {
-  padding: 10px 5px;
 }
 section#block-menu-menu-jobs-menu ul.nav li.active > a {
   background: #2C3E50;
