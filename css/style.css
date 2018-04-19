@@ -7867,7 +7867,7 @@ a.list-group-item-danger.active:focus {
     width: 100%;
   }
   form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-combine-wrapper {
-    width: inherit;
+    width: 100%;
   }
   form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-field-category-tid-wrapper {
     width: 70%;
