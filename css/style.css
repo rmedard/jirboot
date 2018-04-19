@@ -7846,6 +7846,7 @@ section#block-menu-menu-jobs-menu ul.nav li.active > a {
   color: #fff;
 }
 section#block-menu-menu-jobs-menu ul.nav li.active > a span.badge {
+  color: #2C3E50;
   background: #fff;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
