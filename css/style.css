@@ -7836,7 +7836,7 @@ section#block-menu-menu-jobs-menu ul.nav > li > a {
   padding: 10px 5px;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
-  border-bottom: 1px solid #7b8a8b;
+  border-bottom: 2px solid #b4bcc2;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row span.field-content {
   font-size: 14px;
