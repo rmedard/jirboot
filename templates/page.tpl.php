@@ -77,7 +77,7 @@
 <header id="navbar" role="banner" class="navbar-fixed-top">
     <div class="<?php print $container_class; ?>">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <?php if ($logo): ?>
                     <a class="logo navbar-btn pull-left"
                        href="<?php print $front_page; ?>"
@@ -93,7 +93,7 @@
                        title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
                 <?php endif; ?>
             </div>
-            <div class="col-md-9">
+            <div class="col-sm-9">
                 <?php print render($page['jirheader_banner']); ?>
             </div>
         </div>
