@@ -7831,6 +7831,9 @@ body header#navbar {
 #super-container div.super-header div.container-fluid div.navbar {
   margin-bottom: 0;
 }
+#super-container div.main-container {
+  padding-top: 15px;
+}
 section.block .block-title {
   font-size: 22px;
   text-align: center;
