@@ -7839,9 +7839,9 @@ section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content 
   text-align: end;
   font-style: italic;
 }
-form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widget div#edit-combine-wrapper {
+form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-combine-wrapper {
   width: 60%;
 }
-form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widget div.views-submit-button > button {
+form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div.views-submit-button > button {
   margin-top: 0;
 }
