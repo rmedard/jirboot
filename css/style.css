@@ -7822,6 +7822,9 @@ body header#navbar {
   position: relative;
   top: 110px;
 }
+#super-container div.super-header {
+  background: #ecf0f1;
+}
 #super-container div.container-fluid {
   padding: inherit;
 }
