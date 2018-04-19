@@ -7838,7 +7838,7 @@ section.block .block-title {
   font-size: 22px;
   text-align: center;
 }
-ul.media-list li.media div.media-left {
+ul.media-list li.media > div.media-left {
   width: 14%;
 }
 ul.media-list li.media > :not(:last-child) {
