@@ -7825,8 +7825,11 @@ body header#navbar {
 #super-container div.super-header {
   background: #ecf0f1;
 }
-#super-container div.container-fluid {
+#super-container div.super-header div.container-fluid {
   padding: inherit;
+}
+#super-container div.super-header div.container-fluid div.navbar {
+  margin-bottom: 0;
 }
 section.block .block-title {
   font-size: 22px;
