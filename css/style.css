@@ -7846,7 +7846,6 @@ ul.media-list li.media:not(:last-child) {
   border-bottom: solid 2px #b4bcc2;
 }
 section#block-menu-menu-jobs-menu ul.nav li > a {
-  border-bottom: 2px solid #2C3E50;
   padding: 10px 5px;
 }
 section#block-menu-menu-jobs-menu ul.nav li.active > a {
