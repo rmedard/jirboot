@@ -1,10 +1,8 @@
 jQuery(document).ready(function($) {
-    if (window.matchMedia("(min-width: 400px)").matches) {
-        /* the viewport is at least 400 pixels wide */
+    if (window.matchMedia("(min-width: 768px)").matches) {
+
     } else {
-        $('body.front').css('background-color', 'red');
-        $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-justified');
-        /* the viewport is less than 400 pixels wide */
+        $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
     }
 
     const pathName = window.location.pathname.toString();
