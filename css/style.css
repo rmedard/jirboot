@@ -7841,7 +7841,7 @@ section.block .block-title {
 ul.media-list li.media div.media-left {
   width: 14%;
 }
-ul.media-list li.media :not(:last-child) {
+ul.media-list li.media > :not(:last-child) {
   padding-bottom: 5px;
   border-bottom: solid 2px #b4bcc2;
 }
