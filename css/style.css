@@ -7840,7 +7840,7 @@ a.list-group-item-danger.active:focus {
   header#navbar > div#upper-top-header {
     background: #2C3E50;
   }
-  header#navbar > div#upper-top-header div.navbar {
+  header#navbar > div#upper-top-header div.navbar-header {
     background: #ecf0f1;
   }
   img#logo-img {
