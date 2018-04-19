@@ -6,15 +6,15 @@
 @import "bootswatch/bootswatch";
 @import "bootswatch/variables";
 
-
 @header-height: '110px';
 
 /* wider devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-    #super-container{
+    #super-container {
         position: relative;
         top: 22px;
     }
+
     section#block-menu-menu-jobs-menu {
         ul.nav-tabs.nav-justified {
             li, li.active {
@@ -25,21 +25,26 @@
             }
         }
     }
+
     header#navbar > div#upper-top-header {
         div.mobile-menu > nav > ul {
             display: none;
         }
     }
-    div#desk-banner-region{
+
+    div#desk-banner-region {
         padding-right: 0;
     }
-    div#mobile-banner-region{
+
+    div#mobile-banner-region {
         display: none;
     }
-    img.banner-img{
+
+    img.banner-img {
         width: 100%;
         max-height: @header-height;
     }
+
     div#edit-combine-wrapper {
         width: 60%;
     }
@@ -55,17 +60,18 @@
         }
     }
 
-    img#logo-img{
+    img#logo-img {
         height: 44px;
     }
 
-    div#desk-banner-region{
+    div#desk-banner-region {
         display: none;
     }
 
     section#block-system-main {
         margin-top: 10px;
     }
+
     img.banner-img {
         width: 100%;
         height: auto;
@@ -86,10 +92,7 @@
     }
 
     button#menu-toggle-btn > span {
-        span {
-            background: @brand-primary;
-        }
-
+        background: @brand-primary;
     }
 }
 
