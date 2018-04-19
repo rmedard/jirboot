@@ -101,7 +101,7 @@
 <!--</header>-->
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-    <div class="<?php print $container_class; ?>">
+    <div class="<?php print $container_class; ?>" id="upper-top-header">
         <div class="navbar-header">
             <?php if ($logo): ?>
                 <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
