@@ -7816,12 +7816,6 @@ a.list-group-item-danger.active:focus {
 }
 /* wider devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  div.mobile-menu {
-    display: none;
-  }
-  div.desk-menu {
-    display: block;
-  }
   section#block-menu-menu-jobs-menu ul.nav-tabs.nav-justified li a,
   section#block-menu-menu-jobs-menu ul.nav-tabs.nav-justified li.active a {
     border-bottom: 2px solid #2C3E50;
@@ -7830,12 +7824,6 @@ a.list-group-item-danger.active:focus {
 }
 /* Small devices (phones, 768px and down) */
 @media (max-width: 768px) {
-  div.mobile-menu {
-    display: block;
-  }
-  div.desk-menu {
-    display: none;
-  }
   img#logo-img {
     height: 44px;
   }
