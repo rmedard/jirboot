@@ -7835,8 +7835,15 @@ ul.media-list li.media {
 ul.media-list li.media div.media-left {
   width: 14%;
 }
-section#block-menu-menu-jobs-menu ul.nav > li > a {
+section#block-menu-menu-jobs-menu ul.nav li > a {
   padding: 10px 5px;
+}
+section#block-menu-menu-jobs-menu ul.nav li.active > a {
+  background: #2C3E50;
+  color: #fff;
+}
+section#block-menu-menu-jobs-menu ul.nav li.active > a span.badge {
+  background: #E74C3C;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
   border-bottom: 2px solid #b4bcc2;
