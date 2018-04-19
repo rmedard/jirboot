@@ -7,12 +7,15 @@ jQuery(document).ready(function($) {
         /* the viewport is less than 400 pixels wide */
     }
 
-    console.log(window.location.pathname.toString());
-
+    const pathName = window.location.pathname.toString();
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
-        var link = $(this).find('a').attr('href');
-        if (link === window.location.pathname.toString()){
-            $(this).tab('show');
+        let link = $(this).find('a').attr('href');
+        if (pathName === '/'){
+            $(this).first().tab('show');
+        } else {
+            if (link === pathName){
+                $(this).tab('show');
+            }
         }
     });
 });
