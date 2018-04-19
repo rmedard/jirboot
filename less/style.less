@@ -65,7 +65,9 @@ section#block-menu-menu-jobs-menu {
 }
 
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
-    border-bottom: 2px solid @gray-light;
+    :not(:last-child){
+        border-bottom: 2px solid @gray-light;
+    }
     span.field-content {
         font-size: 14px;
     }
