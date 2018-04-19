@@ -128,7 +128,7 @@
 <div id="super-container">
     <div class="super-header">
         <div class="container-fluid">
-            <div class="<?php print $navbar_classes; ?>">
+            <div class="navbar navbar-static-top navbar-default">
                 <div class="container">
                     <div class="navbar-header">
 <!--                        --><?php //if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
