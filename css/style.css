@@ -7824,6 +7824,12 @@ a.list-group-item-danger.active:focus {
   header#navbar > div#upper-top-header div.mobile-menu > nav > ul {
     display: none;
   }
+  div#banner-region {
+    padding-right: 0;
+  }
+  img.banner-img {
+    width: 100%;
+  }
 }
 /* Small devices (phones, 768px and down) */
 @media (max-width: 768px) {

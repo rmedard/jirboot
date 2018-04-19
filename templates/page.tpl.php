@@ -122,7 +122,7 @@
                 </button>
             <?php endif; ?>
         </div>
-        <div class="col-sm-9 col-xs-12 pull-right">
+        <div class="col-sm-9 col-xs-12 pull-right" id="banner-region">
             <?php print render($page['jirheader_banner']); ?>
         </div>
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
