@@ -144,15 +144,16 @@
     </div>
 </header>
 
-<div id="super-container">
+<div id="super-container" class="row">
     <div class="col-xs-12" id="mobile-banner-region">
         <?php print render($page['jirheader_banner']); ?>
     </div>
-    <div class="super-header">
-        <div class="container-fluid">
-            <div class="navbar navbar-static-top navbar-default">
-                <div class="container">
-<!--                    <div class="navbar-header">-->
+    <div class="col-xs-12">
+        <div class="super-header">
+            <div class="container-fluid">
+                <div class="navbar navbar-static-top navbar-default">
+                    <div class="container">
+                        <!--                    <div class="navbar-header">-->
                         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
                             <div class="navbar-collapse collapse desk-menu" id="navbar-collapse">
                                 <nav role="navigation">
@@ -168,64 +169,65 @@
                                 </nav>
                             </div>
                         <?php endif; ?>
-<!--                    </div>-->
+                        <!--                    </div>-->
+                    </div>
                 </div>
             </div>
+
+            <header role="banner" id="page-header">
+                <div class="container">
+                    <?php if (!empty($site_slogan)): ?>
+                        <p class="lead">
+                            <?php print $site_slogan; ?></p>
+                    <?php endif; ?>
+
+                    <?php print render($page['header']); ?>
+                </div>
+            </header>
         </div>
+        <!-- /#page-header -->
 
-        <header role="banner" id="page-header">
-            <div class="container">
-                <?php if (!empty($site_slogan)): ?>
-                    <p class="lead">
-                        <?php print $site_slogan; ?></p>
+        <div class="main-container <?php print $container_class; ?>">
+            <div class="row">
+
+                <section<?php print $content_column_class; ?>>
+                    <?php if (!empty($page['highlighted'])): ?>
+                        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+                    <?php endif; ?>
+                    <?php if (!empty($breadcrumb)): print $breadcrumb;
+                    endif; ?>
+                    <a id="main-content"></a>
+                    <?php print render($title_prefix); ?>
+                    <?php if (!empty($title)): ?>
+                        <h1 class="page-header"><?php print $title; ?></h1>
+                    <?php endif; ?>
+                    <?php print render($title_suffix); ?>
+                    <?php print $messages; ?>
+                    <?php if (!empty($tabs)): ?>
+                        <?php print render($tabs); ?>
+                    <?php endif; ?>
+                    <?php if (!empty($page['help'])): ?>
+                        <?php print render($page['help']); ?>
+                    <?php endif; ?>
+                    <?php if (!empty($action_links)): ?>
+                        <ul class="action-links"><?php print render($action_links); ?></ul>
+                    <?php endif; ?>
+                    <?php print render($page['content']); ?>
+                </section>
+
+                <?php if (!empty($page['sidebar_first'])): ?>
+                    <aside class="col-sm-2" role="complementary">
+                        <?php print render($page['sidebar_first']); ?>
+                    </aside>  <!-- /#sidebar-first -->
                 <?php endif; ?>
 
-                <?php print render($page['header']); ?>
+                <?php if (!empty($page['sidebar_second'])): ?>
+                    <aside class="col-sm-2" role="complementary">
+                        <?php print render($page['sidebar_second']); ?>
+                    </aside>  <!-- /#sidebar-second -->
+                <?php endif; ?>
+
             </div>
-        </header>
-    </div>
-    <!-- /#page-header -->
-
-    <div class="main-container <?php print $container_class; ?>">
-        <div class="row">
-
-            <section<?php print $content_column_class; ?>>
-                <?php if (!empty($page['highlighted'])): ?>
-                    <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-                <?php endif; ?>
-                <?php if (!empty($breadcrumb)): print $breadcrumb;
-                endif; ?>
-                <a id="main-content"></a>
-                <?php print render($title_prefix); ?>
-                <?php if (!empty($title)): ?>
-                    <h1 class="page-header"><?php print $title; ?></h1>
-                <?php endif; ?>
-                <?php print render($title_suffix); ?>
-                <?php print $messages; ?>
-                <?php if (!empty($tabs)): ?>
-                    <?php print render($tabs); ?>
-                <?php endif; ?>
-                <?php if (!empty($page['help'])): ?>
-                    <?php print render($page['help']); ?>
-                <?php endif; ?>
-                <?php if (!empty($action_links)): ?>
-                    <ul class="action-links"><?php print render($action_links); ?></ul>
-                <?php endif; ?>
-                <?php print render($page['content']); ?>
-            </section>
-
-            <?php if (!empty($page['sidebar_first'])): ?>
-                <aside class="col-sm-2" role="complementary">
-                    <?php print render($page['sidebar_first']); ?>
-                </aside>  <!-- /#sidebar-first -->
-            <?php endif; ?>
-
-            <?php if (!empty($page['sidebar_second'])): ?>
-                <aside class="col-sm-2" role="complementary">
-                    <?php print render($page['sidebar_second']); ?>
-                </aside>  <!-- /#sidebar-second -->
-            <?php endif; ?>
-
         </div>
     </div>
 </div>
