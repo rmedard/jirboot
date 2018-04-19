@@ -7821,6 +7821,9 @@ a.list-group-item-danger.active:focus {
     border-bottom: 2px solid #2C3E50;
     padding: 10px 5px;
   }
+  header#navbar > div#upper-top-header div.mobile-menu > nav > ul {
+    display: none;
+  }
 }
 /* Small devices (phones, 768px and down) */
 @media (max-width: 768px) {
