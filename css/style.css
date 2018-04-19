@@ -7853,7 +7853,7 @@ a.list-group-item-danger.active:focus {
     width: 100%;
     height: auto;
   }
-  div#super-container > div.super-header > div.container-fluid > div.navbar {
+  div.super-header > div.container-fluid > div.navbar {
     display: none;
   }
 }
