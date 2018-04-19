@@ -122,6 +122,9 @@
                 </button>
             <?php endif; ?>
         </div>
+        <div class="col-sm-9 col-xs-12 pull-right">
+            <?php print render($page['jirheader_banner']); ?>
+        </div>
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
             <div class="navbar-collapse collapse mobile-menu"
                  id="navbar-collapse">
