@@ -38,12 +38,10 @@ section.block {
 }
 
 ul.media-list {
-    li.media {
-        div.media-left {
-            width: 14%;
-        }
+    li.media > div.media-left {
+        width: 14%;
     }
-    :not(:last-child){
+    li.media:not(:last-child){
         padding-bottom: 5px;
         border-bottom: solid 2px @gray-light;
     }
