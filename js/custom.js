@@ -14,7 +14,8 @@ jQuery(document).ready(function($) {
 
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         var link = $(this).find('a').attr('href');
-        if (link.eq(window.location.pathname)){
+        console.log('Link: ' + link);
+        if (link === window.location.pathname.toString()){
             $(this).tab('show');
         }
     });
