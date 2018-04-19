@@ -7823,7 +7823,7 @@ a.list-group-item-danger.active:focus {
   }
 }
 /* Small devices (phones, 768px and down) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   section#block-system-main {
     margin-top: 10px;
   }
