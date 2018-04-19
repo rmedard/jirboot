@@ -7828,6 +7828,10 @@ body header#navbar {
 #super-container div.container-fluid {
   padding: inherit;
 }
+section.block .block-title {
+  font-size: 22px;
+  text-align: center;
+}
 ul.media-list li.media {
   padding-bottom: 5px;
   border-bottom: solid 2px #b4bcc2;
