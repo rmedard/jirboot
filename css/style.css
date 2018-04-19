@@ -7827,6 +7827,10 @@ a.list-group-item-danger.active:focus {
   section#block-system-main {
     margin-top: 10px;
   }
+  img.banner-img {
+    width: 100%;
+    height: auto;
+  }
 }
 body header#navbar {
   background-color: white;
