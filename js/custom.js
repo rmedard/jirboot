@@ -7,16 +7,10 @@ jQuery(document).ready(function($) {
         /* the viewport is less than 400 pixels wide */
     }
 
-    var currentUrl = window.location.href;
-    var pathName = window.location.pathname;
-    console.log("Current Url: " + currentUrl);
-    console.log("Current Path: " + pathName);
-
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         var link = $(this).find('a').attr('href');
-        console.log('Link: ' + link);
         if (link === window.location.pathname.toString()){
-            $(this).tab('show');
+            $(this).find('a').tab('show');
         }
     });
 });
