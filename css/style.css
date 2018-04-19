@@ -7824,6 +7824,9 @@ a.list-group-item-danger.active:focus {
 }
 /* Small devices (phones, 768px and down) */
 @media (max-width: 768px) {
+  img#logo-img {
+    height: 44px;
+  }
   section#block-system-main {
     margin-top: 10px;
   }
