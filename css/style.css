@@ -7863,6 +7863,15 @@ a.list-group-item-danger.active:focus {
   div.super-header > div.container-fluid > div.navbar {
     display: none;
   }
+  form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets {
+    width: 100%;
+  }
+  form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-combine-wrapper {
+    width: inherit;
+  }
+  form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-field-category-tid-wrapper {
+    width: 70%;
+  }
 }
 body header#navbar {
   max-height: '110px';
