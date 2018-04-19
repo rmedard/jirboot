@@ -8,5 +8,7 @@ jQuery(document).ready(function($) {
     }
 
     var currentUrl = window.location.href;
+    var pathName = window.location.pathname;
     console.log("Current Url: " + currentUrl);
+    console.log("Current Path: " + pathName);
 });
