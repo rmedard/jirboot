@@ -82,7 +82,7 @@
                     <a class="logo navbar-btn pull-left"
                        href="<?php print $front_page; ?>"
                        title="<?php print t('Home'); ?>">
-                        <img src="<?php print $logo; ?>"
+                        <img src="<?php print $logo; ?>" id="logo"
                              alt="<?php print t('Home'); ?>"/>
                     </a>
                 <?php endif; ?>
