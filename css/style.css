@@ -7838,6 +7838,9 @@ a.list-group-item-danger.active:focus {
     width: 100%;
     max-height: '110px';
   }
+  div#edit-combine-wrapper {
+    width: 60%;
+  }
 }
 /* Small devices (phones, 768px and down) */
 @media (max-width: 768px) {
@@ -7867,7 +7870,7 @@ a.list-group-item-danger.active:focus {
     width: 100%;
   }
   form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-combine-wrapper {
-    width: 100%;
+    width: inherit;
   }
   form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-field-category-tid-wrapper {
     width: 70%;
@@ -7919,9 +7922,6 @@ section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content 
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content div.views-row:not(:last-child) {
   border-bottom: 2px solid #b4bcc2;
-}
-form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div#edit-combine-wrapper {
-  width: 60%;
 }
 form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div.views-submit-button > button {
   margin-top: 0;
