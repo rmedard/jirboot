@@ -7841,7 +7841,7 @@ a.list-group-item-danger.active:focus {
     background: #2C3E50;
   }
   header#navbar > div#upper-top-header div.navbar-header {
-    background: #ecf0f1;
+    background: white;
   }
   img#logo-img {
     height: 44px;
