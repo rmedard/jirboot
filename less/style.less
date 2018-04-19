@@ -6,6 +6,19 @@
 @import "bootswatch/bootswatch";
 @import "bootswatch/variables";
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+    section#block-menu-menu-jobs-menu {
+        ul.nav-tabs.nav-justified {
+            li, li.active {
+                a {
+                    border-bottom: 2px solid @brand-primary;
+                }
+            }
+        }
+    }
+}
+
 body {
     header#navbar {
         background-color: white;
@@ -87,3 +100,4 @@ form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form
         margin-top: 0;
     }
 }
+
