@@ -10,12 +10,13 @@ jQuery(document).ready(function($) {
     const pathName = window.location.pathname.toString();
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         let link = $(this).find('a').attr('href');
-        console.log('Index: ' + index + ' link: ' + link);
         if (pathName === '/'){
-            $(this).last().tab('show');
+            $(this).first().tab('show');
+            return false;
         } else {
             if (link === pathName){
                 $(this).tab('show');
+                return false;
             }
         }
     });
