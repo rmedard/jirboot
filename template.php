@@ -6,7 +6,6 @@
  */
 
 function jirboot_preprocess_page(&$variables) {
-    // Add information about the number of sidebars.
     if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
         $variables['content_column_class'] = ' class="col-sm-8"';
     }
@@ -17,7 +16,7 @@ function jirboot_preprocess_page(&$variables) {
         $variables['content_column_class'] = ' class="col-sm-12"';
     }
 
-    if(bootstrap_setting('fluid_container') === 1) {
+    if (bootstrap_setting('fluid_container') === 1) {
         $variables['container_class'] = 'container-fluid';
     }
     else {
@@ -25,21 +24,25 @@ function jirboot_preprocess_page(&$variables) {
     }
 }
 
-function jirboot_preprocess_block(&$variables){
-    if ($variables['block']->delta == 'menu-jobs-menu'){
+function jirboot_preprocess_block(&$variables) {
+    if ($variables['block']->delta == 'menu-jobs-menu') {
 
         $jobs_menu = menu_load_links('menu-jobs-menu');
 
         $output = '<ul class="nav nav-tabs nav-justified">';
 
-        foreach ($jobs_menu as $key => $menu){
-            switch ($menu['link_path']){
+        foreach ($jobs_menu as $key => $menu) {
+            switch ($menu['link_path']) {
                 case 'jobs/featured':
                     $query1 = new EntityFieldQuery();
                     $featured = $query1->entityCondition('entity_type', 'node')
                         ->entityCondition('bundle', 'job')
                         ->propertyCondition('status', NODE_PUBLISHED)
-                        ->fieldCondition('field_posting_type', 'tid', array(33, 34, 36), 'IN')
+                        ->fieldCondition('field_posting_type', 'tid', [
+                            33,
+                            34,
+                            36,
+                        ], 'IN')
                         ->count()->execute();
                     $menu['jobs_count'] = $featured;
                     break;
@@ -84,7 +87,8 @@ function jirboot_preprocess_block(&$variables){
                     $emps = $query6->entityCondition('entity_type', 'node')
                         ->entityCondition('bundle', 'employer')
                         ->propertyCondition('status', NODE_PUBLISHED)
-                        ->fieldCondition('field_employer_public_employer', 'value', 1)->execute();
+                        ->fieldCondition('field_employer_public_employer', 'value', 1)
+                        ->execute();
                     $publics = 0;
                     if (isset($emps['node'])) {
                         $emps_ids = array_keys($emps['node']);
@@ -109,7 +113,7 @@ function jirboot_preprocess_block(&$variables){
             }
 
             if (intval($menu['jobs_count']) > 0) {
-                $output .= '<li role="presentation"><a href="/'. $menu['link_path'] .'">' . $menu['link_title'] . ' <span class="badge">'. $menu['jobs_count'] .'</span></a></li>';
+                $output .= '<li role="presentation"><a href="/' . $menu['link_path'] . '" data-toggle="tab" role="tab" aria-controls="' . strtolower($menu['link_title']) . '">' . $menu['link_title'] . ' <span class="badge">' . $menu['jobs_count'] . '</span></a></li>';
             }
         }
         $output .= '</ul>';
