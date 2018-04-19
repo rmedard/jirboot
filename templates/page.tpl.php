@@ -148,8 +148,8 @@
                 <div class="container">
 <!--                    <div class="navbar-header">-->
                         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-                            <div class="navbar-collapse collapse"
-                                 id="navbar-collapse">
+<!--                            <div class="navbar-collapse collapse"-->
+<!--                                 id="navbar-collapse">-->
                                 <nav role="navigation">
                                     <?php if (!empty($primary_nav)): ?>
                                         <?php print render($primary_nav); ?>
@@ -161,7 +161,7 @@
                                         <?php print render($page['navigation']); ?>
                                     <?php endif; ?>
                                 </nav>
-                            </div>
+<!--                            </div>-->
                         <?php endif; ?>
 <!--                    </div>-->
                 </div>
