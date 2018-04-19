@@ -145,10 +145,10 @@
 </header>
 
 <div id="super-container">
+    <div class="col-xs-12" id="mobile-banner-region">
+        <?php print render($page['jirheader_banner']); ?>
+    </div>
     <div class="super-header">
-        <div class="col-xs-12" id="mobile-banner-region">
-            <?php print render($page['jirheader_banner']); ?>
-        </div>
         <div class="container-fluid">
             <div class="navbar navbar-static-top navbar-default">
                 <div class="container">
