@@ -7831,7 +7831,10 @@ ul.media-list li.media > div.media-left {
 section#block-menu-menu-jobs-menu ul.nav > li > a {
   padding: 10px 5px;
 }
-section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row > div.views-field-field-employer {
-  font-size: 10px;
+section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row span.field-content {
+  font-size: 14px;
+}
+section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row div.views-field-field-employer {
+  font-size: 11px;
   text-align: end;
 }
