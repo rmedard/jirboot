@@ -144,7 +144,7 @@
     </div>
 </header>
 
-<div id="super-container" class="row">
+<div id="super-container">
     <div class="col-xs-12" id="mobile-banner-region">
         <?php print render($page['jirheader_banner']); ?>
     </div>
