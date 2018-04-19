@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         let link = $(this).find('a').attr('href');
         if (pathName === '/'){
-            $(this).first().tab('show');
+            $(this).last().tab('show');
         } else {
             if (link === pathName){
                 $(this).tab('show');
