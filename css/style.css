@@ -7840,6 +7840,10 @@ body header#navbar {
   background-color: white;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.34);
 }
+#super-container {
+  position: relative;
+  top: 41px;
+}
 #super-container div.super-header {
   background: #ecf0f1;
 }
