@@ -29,7 +29,7 @@ function jirboot_preprocess_block(&$variables) {
 
         $jobs_menu = menu_load_links('menu-jobs-menu');
 
-        $output = '<ul class="nav nav-tabs nav-justified">';
+        $output = '<ul class="nav nav-tabs nav-justified" role="tablist">';
 
         foreach ($jobs_menu as $key => $menu) {
             switch ($menu['link_path']) {
