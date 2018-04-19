@@ -41,7 +41,7 @@ ul.media-list {
     li.media > div.media-left {
         width: 14%;
     }
-    li.media:not(:last-child){
+    li.media:not(:last-child) {
         padding-bottom: 5px;
         border-bottom: solid 2px @gray-light;
     }
@@ -64,17 +64,19 @@ section#block-menu-menu-jobs-menu {
     }
 }
 
-section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
-    :not(:last-child){
+section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content {
+    div.views-row {
+        span.field-content {
+            font-size: 14px;
+        }
+        div.views-field-field-employer {
+            font-size: 11px;
+            text-align: end;
+            font-style: italic;
+        }
+    }
+    div.views-row:not(:last-child) {
         border-bottom: 2px solid @gray-light;
-    }
-    span.field-content {
-        font-size: 14px;
-    }
-    div.views-field-field-employer {
-        font-size: 11px;
-        text-align: end;
-        font-style: italic;
     }
 }
 
