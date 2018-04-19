@@ -7878,8 +7878,8 @@ a.list-group-item-danger.active:focus {
   button#menu-toggle-btn > span {
     background: #2C3E50;
   }
-  button#menu-toggle-btn > span :hover,
-  button#menu-toggle-btn > span :focus {
+  button#menu-toggle-btn:hover,
+  button#menu-toggle-btn:focus {
     background: white;
   }
 }
