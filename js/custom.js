@@ -7,6 +7,8 @@ jQuery(document).ready(function($) {
         /* the viewport is less than 400 pixels wide */
     }
 
+    console.log(window.location.pathname);
+
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         var link = $(this).find('a').attr('href');
         if (link === window.location.pathname.toString()){
