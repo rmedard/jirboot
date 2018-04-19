@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     if (window.matchMedia("(min-width: 768px)").matches) {
-
+        $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
     }
