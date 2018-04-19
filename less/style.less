@@ -32,14 +32,17 @@ ul.media-list {
 }
 section#block-menu-menu-jobs-menu {
     ul.nav {
-        li > a {
-            padding: 10px 5px;
+        li {
+            border-bottom: 2px solid @brand-primary;
+            a {
+                padding: 10px 5px;
+            }
         }
         li.active > a {
             background: @brand-primary;
             color: @body-bg;
             span.badge {
-                background: @brand-danger;
+                background: @body-bg;
             }
         }
     }
