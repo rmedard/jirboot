@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
     console.log("Current Path: " + pathName);
 
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
-        var link = $(this + ' > a').attr('href');
+        var link = $(this).find('a').attr('href');
         if (link.eq(window.location.pathname)){
             $(this).tab('show');
         }
