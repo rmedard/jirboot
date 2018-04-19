@@ -7825,7 +7825,10 @@ body header#navbar {
 #super-container div.container-fluid {
   padding: inherit;
 }
-ul.media-list li.media > div.media-left {
+ul.media-list li.media {
+  border-bottom: solid 2px #7b8a8b;
+}
+ul.media-list li.media div.media-left {
   width: 14%;
 }
 section#block-menu-menu-jobs-menu ul.nav > li > a {

@@ -1,57 +1,52 @@
 // Bootstrap library.
 @import 'bootstrap';
-
 // Base-theme overrides.
 @import 'overrides';
-
 // Bootswatch
 @import "bootswatch/bootswatch";
 @import "bootswatch/variables";
-
 body {
-    header#navbar{
+    header#navbar {
         background-color: white;
         box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33);
     }
 }
-
-#super-container{
+#super-container {
     position: relative;
     top: 110px;
-    div.container-fluid{
+    div.container-fluid {
         padding: inherit;
     }
 }
-
 ul.media-list {
-    li.media > div.media-left{
-        width: 14%;
+    li.media {
+        border-bottom: solid 2px @gray-dark;
+        div.media-left {
+            width: 14%;
+        }
     }
 }
-
 section#block-menu-menu-jobs-menu {
     ul.nav > li > a {
         padding: 10px 5px;
     }
 }
-
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content > div.views-row {
     border-bottom: 1px solid @gray-dark;
     span.field-content {
         font-size: 14px;
     }
-    div.views-field-field-employer{
+    div.views-field-field-employer {
         font-size: 11px;
         text-align: end;
         font-style: italic;
     }
 }
-
 form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets {
     div#edit-combine-wrapper {
         width: 60%;
     }
-    div.views-submit-button > button{
+    div.views-submit-button > button {
         margin-top: 0;
     }
 }
