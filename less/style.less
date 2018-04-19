@@ -6,7 +6,7 @@
 @import "bootswatch/bootswatch";
 @import "bootswatch/variables";
 
-/* Small devices (tablets, 768px and up) */
+/* wider devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
     section#block-menu-menu-jobs-menu {
         ul.nav-tabs.nav-justified {
@@ -17,6 +17,13 @@
                 }
             }
         }
+    }
+}
+
+/* Small devices (phones, 768px and down) */
+@media (min-width: @screen-sm-min) {
+    section#block-system-main {
+        margin-top: 10px;
     }
 }
 

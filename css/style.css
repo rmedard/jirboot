@@ -7814,12 +7814,18 @@ a.list-group-item-danger.active:focus {
 .popover {
   color: #2C3E50;
 }
-/* Small devices (tablets, 768px and up) */
+/* wider devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   section#block-menu-menu-jobs-menu ul.nav-tabs.nav-justified li a,
   section#block-menu-menu-jobs-menu ul.nav-tabs.nav-justified li.active a {
     border-bottom: 2px solid #2C3E50;
     padding: 10px 5px;
+  }
+}
+/* Small devices (phones, 768px and down) */
+@media (min-width: 768px) {
+  section#block-system-main {
+    margin-top: 10px;
   }
 }
 body header#navbar {
