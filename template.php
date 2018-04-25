@@ -133,8 +133,9 @@ function jirboot_preprocess_block(&$variables) {
         $output .= '<div class="panel-heading"><span class="glyphicon '. $icons[$variables['block']->delta] .'"></span> ';
         $output .= $variables['block']->subject;
         $output .= '</div>';
+        $output .= '<div class="panel-body">';
         $output .= $variables['content'];
-        $output .= '</div>';
+        $output .= '</div></div>';
         $variables['content'] = $output;
     }
 }
