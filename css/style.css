@@ -7937,10 +7937,14 @@ footer.footer {
   background: #2C3E50;
   padding-bottom: 0;
 }
+footer.footer #jir-footer .row > div {
+  margin-bottom: 10px;
+}
 footer.footer #jir-main-footer {
   background: #1a242f;
   color: white;
   padding-bottom: 15px;
+  padding-top: 15px;
   text-align: center;
 }
 section.block-jir-stats div.panel > ul.list-group > li.list-group-item {
