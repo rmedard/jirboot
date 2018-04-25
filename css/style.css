@@ -7935,6 +7935,7 @@ form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form
 }
 footer {
   background: #2C3E50;
+  padding-bottom: 0;
 }
 footer #jir-main-footer {
   background: #1a242f;

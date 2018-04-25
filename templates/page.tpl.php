@@ -233,7 +233,9 @@
             </div>
         </div>
         <div class="row" id="jir-main-footer">
-            <?php print render($page['footer']); ?>
+            <div class="container">
+                <?php print render($page['footer']); ?>
+            </div>
         </div>
     </footer>
 <?php endif; ?>
