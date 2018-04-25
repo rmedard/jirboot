@@ -7943,3 +7943,6 @@ footer.footer #jir-main-footer {
   padding-bottom: 15px;
   text-align: center;
 }
+section.block-jir-stats div.panel > ul.list-group > li.list-group-item {
+  padding: 10px 10px;
+}
