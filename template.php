@@ -123,9 +123,9 @@ function jirboot_preprocess_block(&$variables) {
         $output = '<div class="panel panel-success">';
         $output .= '<div class="panel-heading">';
         $output .= $variables['block']->subject;
-        $output .= '</div><div class="panel-body">';
+        $output .= '</div>';
         $output .= $variables['content'];
-        $output .= '</div></div>';
+        $output .= '</div>';
         $variables['content'] = $output;
     }
 }
