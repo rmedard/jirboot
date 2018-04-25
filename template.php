@@ -25,7 +25,7 @@ function jirboot_preprocess_page(&$variables) {
 }
 
 function jirboot_preprocess_block(&$variables) {
-//    var_dump('ID: ' . $variables['block']->delta . ' Title: ' . $variables['block']->subject);
+    var_dump('ID: ' . $variables['block']->delta . ' Title: ' . $variables['block']->subject);
     if ($variables['block']->delta == 'menu-jobs-menu') {
 
         $jobs_menu = menu_load_links('menu-jobs-menu');
