@@ -205,13 +205,10 @@
         </div>
     </div>
 </div>
-<div class="container-fluid" id="jir-footer">
-
-</div>
 <?php if (!empty($page['footer'])): ?>
 <!--    <footer class="footer --><?php //print $container_class; ?><!--">-->
     <footer class="footer container-fluid">
-        <div class="container">
+        <div class="container" id="jir-footer">
             <div class="row">
                 <?php if (!empty($page['jirfooter_first'])): ?>
                     <div class="col-sm-3" role="complementary">
@@ -234,9 +231,9 @@
                     </div>  <!-- /#sidebar-second -->
                 <?php endif; ?>
             </div>
-            <div class="row">
-                <?php print render($page['footer']); ?>
-            </div>
+        </div>
+        <div class="row" id="jir-main-footer">
+            <?php print render($page['footer']); ?>
         </div>
     </footer>
 <?php endif; ?>

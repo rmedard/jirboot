@@ -7933,3 +7933,9 @@ section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content 
 form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div.views-submit-button > button {
   margin-top: 0;
 }
+footer {
+  background: #2C3E50;
+}
+footer #jir-main-footer {
+  background: #1a242f;
+}
