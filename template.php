@@ -25,7 +25,7 @@ function jirboot_preprocess_page(&$variables) {
 }
 
 function jirboot_preprocess_block(&$variables) {
-    var_dump('ID: ' . $variables['block']->delta . ' Title: ' . $variables['block']->subject);
+//    var_dump('ID: ' . $variables['block']->delta . ' Title: ' . $variables['block']->subject);
     if ($variables['block']->delta == 'menu-jobs-menu') {
 
         $jobs_menu = menu_load_links('menu-jobs-menu');
@@ -119,7 +119,7 @@ function jirboot_preprocess_block(&$variables) {
         }
         $output .= '</ul>';
         $variables['content'] = $output;
-    } elseif ($variables['block']->delta == 'jir-realtime'){
+    } elseif ($variables['block']->delta == 'jir_realtime'){
         $output = '<div class="panel panel-success">';
         $output .= '<div class="panel-heading">';
         $output .= $variables['block']->subject;
