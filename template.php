@@ -118,5 +118,13 @@ function jirboot_preprocess_block(&$variables) {
         }
         $output .= '</ul>';
         $variables['content'] = $output;
+    } elseif ($variables['block']->delta == 'stats-jir-realtime'){
+        $output = '<div class="panel panel-success">';
+        $output .= '<div class="panel-heading">';
+        $output .= $variables['block']->subject;
+        $output .= '</div><div class="panel-body">';
+        $output .= $variables['content'];
+        $output .= '</div></div>';
+        $variables['content'] = $output;
     }
 }
