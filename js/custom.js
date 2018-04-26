@@ -3,14 +3,18 @@ function handleDeviceChange(deviceMql, $) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
-        let jirFooterBlockMinHeight = 0;
-        let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
-        jirFooterBlock.each(function () {
-            if ($(this).height() > jirFooterBlockMinHeight) {
-                jirFooterBlockMinHeight = $(this).height();
+        $(window).on('orientationchange', function (event) {
+            if (event.orientation === 'landscape'){
+                let jirFooterBlockMinHeight = 0;
+                let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
+                jirFooterBlock.each(function () {
+                    if ($(this).height() > jirFooterBlockMinHeight) {
+                        jirFooterBlockMinHeight = $(this).height();
+                    }
+                });
+                jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
             }
         });
-        jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
     }
 }
 
