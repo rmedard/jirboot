@@ -28,9 +28,9 @@ jQuery(document).ready(function($) {
     let jirFooterBlockMaxHeight = 0;
 
     $('div#jir-footer > div.row > div.col-sm-3').each(function () {
-        console.log('height: ' + $(this).height);
-        if ($(this).height > jirFooterBlockMaxHeight) {
-            jirFooterBlockMaxHeight = $(this).height;
+        console.log('height: ' + $(this).height());
+        if ($(this).height() > jirFooterBlockMaxHeight) {
+            jirFooterBlockMaxHeight = $(this).height();
         }
     });
 
