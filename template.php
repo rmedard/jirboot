@@ -121,7 +121,7 @@ function jirboot_preprocess_block(&$variables) {
         $variables['content'] = $output;
     } elseif ($variables['block']->delta == 'jir_realtime'){
         $output = '<div class="panel panel-success">';
-        $output .= '<div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> ';
+        $output .= '<div class="panel-heading"><i class="fa fa-chart-line"></i> ';
         $output .= $variables['block']->subject;
         $output .= '</div>';
         $output .= $variables['content'];
