@@ -54,6 +54,12 @@
 /* Small devices (phones, 768px and down) */
 @media (max-width: @screen-sm-min) {
 
+    @media (orientation:landscape){
+        .col-sm-3, .col-sm-2 {
+            width: 50%;
+        }
+    }
+
     header#navbar > div#upper-top-header {
         background: @brand-primary;
         div.navbar-header {
