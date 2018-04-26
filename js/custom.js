@@ -3,6 +3,9 @@ jQuery(document).ready(function($) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
+        var mediaQueryListener = window.matchMedia("(orientation: portrait)");
+        mediaQueryListener.addListener(handleOrientationChange);
+        handleOrientationChange(mediaQueryListener, $);
     }
 
     const pathName = window.location.pathname.toString();
@@ -19,3 +22,9 @@ jQuery(document).ready(function($) {
         }
     });
 });
+
+function handleOrientationChange(mql, $) {
+    if (mql.matches){
+        $('div#jir-footer > div > div').addClass('col-xs-6');
+    }
+}
