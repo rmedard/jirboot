@@ -7924,7 +7924,7 @@ section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content 
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content div.views-row div.views-field-field-employer {
   font-size: 11px;
-  text-align: end;
+  text-align: right;
   font-style: italic;
 }
 section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content div.views-row:not(:last-child) {
