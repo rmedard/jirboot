@@ -9,6 +9,10 @@ function handleDeviceChange(deviceMql, $) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
+        if (window.matchMedia("(orientation: landscape)").matches){
+            $('div#jir-footer > div > div').addClass('col-xs-6');
+        }
+
 
         // let orientationMql = window.matchMedia("(orientation: landscape)");
         // orientationMql.addListener(handleOrientationChange);
@@ -21,9 +25,9 @@ jQuery(document).ready(function($) {
     deviceMql.addListener(handleDeviceChange);
     handleDeviceChange(deviceMql, $);
 
-    let orientationMql = window.matchMedia("(orientation: landscape)");
-    orientationMql.addListener(handleOrientationChange);
-    handleOrientationChange(orientationMql, $);
+    // let orientationMql = window.matchMedia("(orientation: landscape)");
+    // orientationMql.addListener(handleOrientationChange);
+    // handleOrientationChange(orientationMql, $);
 
     // if (window.matchMedia("(min-width: 768px)").matches) {
     //     $('button#menu-toggle-btn').hide();
