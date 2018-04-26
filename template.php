@@ -128,9 +128,9 @@ function jirboot_preprocess_block(&$variables) {
         $output .= '</div>';
         $variables['content'] = $output;
     } elseif (in_array($variables['block']->delta, array('5', '13', '14'))){
-        $icons = array('5' => 'glyphicon-home', '13' => 'glyphicon-briefcase', '14' => 'glyphicon-globe');
+        $icons = array('5' => 'fa-home', '13' => 'fa-home', '14' => 'fa-home');
         $output = '<div class="panel panel-success">';
-        $output .= '<div class="panel-heading"><span class="glyphicon '. $icons[$variables['block']->delta] .'"></span> ';
+        $output .= '<div class="panel-heading"><i class="fas '. $icons[$variables['block']->delta] .'"></i> ';
         $output .= $variables['block']->subject;
         $output .= '</div>';
         $output .= '<div class="panel-body">';
