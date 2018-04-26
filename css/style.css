@@ -7945,12 +7945,12 @@ section#block-views-all-jobs-soon-to-expire-block > div.view > div.view-content 
 form#views-exposed-form-all-jobs-jobs-search-page > div > div.views-exposed-form > div.views-exposed-widgets div.views-submit-button > button {
   margin-top: 0;
 }
+div.jir-footer-block {
+  margin-bottom: 10px;
+}
 footer.footer {
   background: #2C3E50;
   padding-bottom: 0;
-}
-footer.footer #jir-footer .row > div {
-  margin-bottom: 10px;
 }
 footer.footer #jir-main-footer {
   background: #1a242f;
