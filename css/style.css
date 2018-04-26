@@ -7887,6 +7887,7 @@ a.list-group-item-danger.active:focus {
   .col-sm-3,
   .col-sm-2 {
     width: 50%;
+    float: left;
   }
 }
 body header#navbar {
