@@ -7890,6 +7890,11 @@ a.list-group-item-danger.active:focus {
     float: left;
   }
 }
+@media (max-width: 768px) and (orientation: portrait) {
+  div#jir-footer > div.row > div.col-sm-3 {
+    min-height: 0;
+  }
+}
 body header#navbar {
   max-height: '110px';
   background-color: white;
