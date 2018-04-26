@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
-        var mediaQueryListener = window.matchMedia("(orientation: portrait)");
+        var mediaQueryListener = window.matchMedia("(orientation: landscape)");
         mediaQueryListener.addListener(handleOrientationChange);
         handleOrientationChange(mediaQueryListener, $);
     }
