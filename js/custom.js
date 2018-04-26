@@ -3,6 +3,14 @@ function handleDeviceChange(deviceMql, $) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
+        let jirFooterBlockMinHeight = 0;
+        let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
+        jirFooterBlock.each(function () {
+            if ($(this).height() > jirFooterBlockMinHeight) {
+                jirFooterBlockMinHeight = $(this).height();
+            }
+        });
+        jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
     }
 }
 
@@ -24,15 +32,5 @@ jQuery(document).ready(function($) {
             }
         }
     });
-
-    let jirFooterBlockMinHeight = 0;
-    let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
-    jirFooterBlock.each(function () {
-        console.log('height: ' + $(this).height());
-        if ($(this).height() > jirFooterBlockMinHeight) {
-            jirFooterBlockMinHeight = $(this).height();
-        }
-    });
-    jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
 
 });
