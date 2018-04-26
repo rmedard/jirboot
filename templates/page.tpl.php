@@ -210,26 +210,30 @@
     <footer class="footer container-fluid">
         <div class="container" id="jir-footer">
             <div class="row">
-                <?php if (!empty($page['jirfooter_first'])): ?>
-                    <div class="col-sm-3" role="complementary">
-                        <?php print render($page['jirfooter_first']); ?>
-                    </div>  <!-- /#sidebar-second -->
-                <?php endif; ?>
-                <?php if (!empty($page['jirfooter_second'])): ?>
-                    <div class="col-sm-3" role="complementary">
-                        <?php print render($page['jirfooter_second']); ?>
-                    </div>  <!-- /#sidebar-second -->
-                <?php endif; ?>
-                <?php if (!empty($page['jirfooter_third'])): ?>
-                    <div class="col-sm-3" role="complementary">
-                        <?php print render($page['jirfooter_third']); ?>
-                    </div>  <!-- /#sidebar-second -->
-                <?php endif; ?>
-                <?php if (!empty($page['jirfooter_fourth'])): ?>
-                    <div class="col-sm-3" role="complementary">
-                        <?php print render($page['jirfooter_fourth']); ?>
-                    </div>  <!-- /#sidebar-second -->
-                <?php endif; ?>
+                <div class="testor">
+                    <?php if (!empty($page['jirfooter_first'])): ?>
+                        <div class="col-sm-3" role="complementary">
+                            <?php print render($page['jirfooter_first']); ?>
+                        </div>  <!-- /#sidebar-second -->
+                    <?php endif; ?>
+                    <?php if (!empty($page['jirfooter_second'])): ?>
+                        <div class="col-sm-3" role="complementary">
+                            <?php print render($page['jirfooter_second']); ?>
+                        </div>  <!-- /#sidebar-second -->
+                    <?php endif; ?>
+                </div>
+                <div class="testor">
+                    <?php if (!empty($page['jirfooter_third'])): ?>
+                        <div class="col-sm-3" role="complementary">
+                            <?php print render($page['jirfooter_third']); ?>
+                        </div>  <!-- /#sidebar-second -->
+                    <?php endif; ?>
+                    <?php if (!empty($page['jirfooter_fourth'])): ?>
+                        <div class="col-sm-3" role="complementary">
+                            <?php print render($page['jirfooter_fourth']); ?>
+                        </div>  <!-- /#sidebar-second -->
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
         <div class="row" id="jir-main-footer">
