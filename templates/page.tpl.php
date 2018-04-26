@@ -212,24 +212,24 @@
             <div class="row">
                 <div class="testor">
                     <?php if (!empty($page['jirfooter_first'])): ?>
-                        <div class="col-sm-3" role="complementary">
+                        <div class="col-sm-3 jir-footer-block" role="complementary">
                             <?php print render($page['jirfooter_first']); ?>
                         </div>  <!-- /#sidebar-second -->
                     <?php endif; ?>
                     <?php if (!empty($page['jirfooter_second'])): ?>
-                        <div class="col-sm-3" role="complementary">
+                        <div class="col-sm-3 jir-footer-block" role="complementary">
                             <?php print render($page['jirfooter_second']); ?>
                         </div>  <!-- /#sidebar-second -->
                     <?php endif; ?>
                 </div>
                 <div class="testor">
                     <?php if (!empty($page['jirfooter_third'])): ?>
-                        <div class="col-sm-3" role="complementary">
+                        <div class="col-sm-3 jir-footer-block" role="complementary">
                             <?php print render($page['jirfooter_third']); ?>
                         </div>  <!-- /#sidebar-second -->
                     <?php endif; ?>
                     <?php if (!empty($page['jirfooter_fourth'])): ?>
-                        <div class="col-sm-3" role="complementary">
+                        <div class="col-sm-3 jir-footer-block" role="complementary">
                             <?php print render($page['jirfooter_fourth']); ?>
                         </div>  <!-- /#sidebar-second -->
                     <?php endif; ?>
