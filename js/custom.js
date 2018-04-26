@@ -25,15 +25,14 @@ jQuery(document).ready(function($) {
         }
     });
 
-    let jirFooterBlockMaxHeight = 0;
-
-    $('div#jir-footer > div.row > div.col-sm-3').each(function () {
+    let jirFooterBlockMinHeight = 0;
+    let jirFooterBlock = $('div#jir-footer > div.row > div.col-sm-3');
+    jirFooterBlock.each(function () {
         console.log('height: ' + $(this).height());
-        if ($(this).height() > jirFooterBlockMaxHeight) {
-            jirFooterBlockMaxHeight = $(this).height();
+        if ($(this).height() > jirFooterBlockMinHeight) {
+            jirFooterBlockMinHeight = $(this).height();
         }
     });
-
-    console.log('Max height: ' + jirFooterBlockMaxHeight);
+    jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
 
 });
