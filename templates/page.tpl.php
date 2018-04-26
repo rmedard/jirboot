@@ -79,17 +79,23 @@
     <div class="<?php print $container_class; ?>" id="upper-top-header">
         <div class="navbar-header">
             <?php if ($logo): ?>
-                <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo-img"/>
+                <a class="logo navbar-btn pull-left"
+                   href="<?php print $front_page; ?>"
+                   title="<?php print t('Home'); ?>">
+                    <img src="<?php print $logo; ?>"
+                         alt="<?php print t('Home'); ?>" id="logo-img"/>
                 </a>
             <?php endif; ?>
 
             <?php if (!empty($site_name)): ?>
-                <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+                <a class="name navbar-brand" href="<?php print $front_page; ?>"
+                   title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
             <?php endif; ?>
 
             <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" id="menu-toggle-btn">
+                <button type="button" class="navbar-toggle"
+                        data-toggle="collapse" data-target="#navbar-collapse"
+                        id="menu-toggle-btn">
                     <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -130,7 +136,8 @@
                     <div class="container">
                         <!--                    <div class="navbar-header">-->
                         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-                            <div class="navbar-collapse collapse desk-menu" id="navbar-collapse">
+                            <div class="navbar-collapse collapse desk-menu"
+                                 id="navbar-collapse">
                                 <nav role="navigation">
                                     <?php if (!empty($primary_nav)): ?>
                                         <?php print render($primary_nav); ?>
@@ -206,34 +213,31 @@
     </div>
 </div>
 <?php if (!empty($page['footer'])): ?>
-<!--    <footer class="footer --><?php //print $container_class; ?><!--">-->
+    <!--    <footer class="footer --><?php //print $container_class; ?><!--">-->
     <footer class="footer container-fluid">
         <div class="container" id="jir-footer">
             <div class="row">
-                <div class="testor">
-                    <?php if (!empty($page['jirfooter_first'])): ?>
-                        <div class="col-sm-3 jir-footer-block" role="complementary">
-                            <?php print render($page['jirfooter_first']); ?>
-                        </div>  <!-- /#sidebar-second -->
-                    <?php endif; ?>
-                    <?php if (!empty($page['jirfooter_second'])): ?>
-                        <div class="col-sm-3 jir-footer-block" role="complementary">
-                            <?php print render($page['jirfooter_second']); ?>
-                        </div>  <!-- /#sidebar-second -->
-                    <?php endif; ?>
-                </div>
-                <div class="testor">
-                    <?php if (!empty($page['jirfooter_third'])): ?>
-                        <div class="col-sm-3 jir-footer-block" role="complementary">
-                            <?php print render($page['jirfooter_third']); ?>
-                        </div>  <!-- /#sidebar-second -->
-                    <?php endif; ?>
-                    <?php if (!empty($page['jirfooter_fourth'])): ?>
-                        <div class="col-sm-3 jir-footer-block" role="complementary">
-                            <?php print render($page['jirfooter_fourth']); ?>
-                        </div>  <!-- /#sidebar-second -->
-                    <?php endif; ?>
-                </div>
+                <?php if (!empty($page['jirfooter_first'])): ?>
+                    <div class="col-sm-3 jir-footer-block" role="complementary">
+                        <?php print render($page['jirfooter_first']); ?>
+                    </div>  <!-- /#sidebar-second -->
+                <?php endif; ?>
+                <?php if (!empty($page['jirfooter_second'])): ?>
+                    <div class="col-sm-3 jir-footer-block" role="complementary">
+                        <?php print render($page['jirfooter_second']); ?>
+                    </div>  <!-- /#sidebar-second -->
+                <?php endif; ?>
+                <?php if (!empty($page['jirfooter_third'])): ?>
+                    <div class="col-sm-3 jir-footer-block" role="complementary">
+                        <?php print render($page['jirfooter_third']); ?>
+                    </div>  <!-- /#sidebar-second -->
+                <?php endif; ?>
+                <?php if (!empty($page['jirfooter_fourth'])): ?>
+                    <div class="col-sm-3 jir-footer-block" role="complementary">
+                        <?php print render($page['jirfooter_fourth']); ?>
+                    </div>  <!-- /#sidebar-second -->
+                <?php endif; ?>
+
             </div>
         </div>
         <div class="row" id="jir-main-footer">

@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     });
 
     let jirFooterBlockMinHeight = 0;
-    let jirFooterBlock = $('div#jir-footer > div.row > div.col-sm-3');
+    let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
     jirFooterBlock.each(function () {
         console.log('height: ' + $(this).height());
         if ($(this).height() > jirFooterBlockMinHeight) {
