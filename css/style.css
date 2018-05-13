@@ -7964,6 +7964,7 @@ section.block-jir-stats div.panel > ul.list-group > li.list-group-item {
 }
 div.jir-pricing-plan {
   text-align: center;
+  font-size: x-large;
 }
 div.jir-pricing-plan div.jir-pricing-price {
   font-weight: bolder;
