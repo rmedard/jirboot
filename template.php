@@ -6,11 +6,11 @@
  */
 
 function jirboot_preprocess_page(&$variables) {
-    $variables['display_sidebars'] = 'true';
+    $variables['display_sidebars'] = 1;
     $full_pages = array('services', 'post-advert');
     if (in_array(current_path(), $full_pages)) {
         $variables['content_column_class'] = ' class="col-sm-12"';
-        $variables['display_sidebars'] = 'false';
+        $variables['display_sidebars'] = 0;
     } else {
         if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
             $variables['content_column_class'] = ' class="col-sm-8"';
