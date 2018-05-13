@@ -7962,3 +7962,12 @@ footer.footer #jir-main-footer {
 section.block-jir-stats div.panel > ul.list-group > li.list-group-item {
   padding: 10px 10px;
 }
+div.jir-pricing-plan {
+  text-align: center;
+}
+div.jir-pricing-plan div.jir-pricing-price {
+  font-weight: bolder;
+  font-variant: small-caps;
+  font-size: xx-large;
+  background-color: #ecf0f1;
+}
