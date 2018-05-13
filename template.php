@@ -6,7 +6,6 @@
  */
 
 function jirboot_preprocess_page(&$variables) {
-    $variables['display_sidebars'] = 1;
     $full_pages = array('services', 'post-advert');
     if (in_array(current_path(), $full_pages)) {
         $variables['content_column_class'] = ' class="col-sm-12"';
