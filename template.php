@@ -7,22 +7,27 @@
 
 function jirboot_preprocess_page(&$variables) {
 
-    print_r(current_path());
-    if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
-        $variables['content_column_class'] = ' class="col-sm-8"';
-    }
-    elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
-        $variables['content_column_class'] = ' class="col-sm-8"';
-    }
-    else {
-        $variables['content_column_class'] = ' class="col-sm-12"';
-    }
+    $full_pages = array('services');
 
-    if (bootstrap_setting('fluid_container') === 1) {
-        $variables['container_class'] = 'container-fluid';
-    }
-    else {
-        $variables['container_class'] = 'container';
+    if (in_array(current_path(), $full_pages)) {
+        $variables['content_column_class'] = ' class="col-sm-12"';
+    } else {
+        if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+            $variables['content_column_class'] = ' class="col-sm-8"';
+        }
+        elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+            $variables['content_column_class'] = ' class="col-sm-8"';
+        }
+        else {
+            $variables['content_column_class'] = ' class="col-sm-12"';
+        }
+
+        if (bootstrap_setting('fluid_container') === 1) {
+            $variables['container_class'] = 'container-fluid';
+        }
+        else {
+            $variables['container_class'] = 'container';
+        }
     }
 }
 
