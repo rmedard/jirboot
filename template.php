@@ -11,7 +11,7 @@ function jirboot_preprocess_page(&$variables) {
 
     if (in_array(current_path(), $full_pages)) {
         $variables['content_column_class'] = ' class="col-sm-12"';
-        $variables['display_sidebars'] = false;
+        $variables['display_sidebars'] = 'false';
     } else {
         if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
             $variables['content_column_class'] = ' class="col-sm-8"';
