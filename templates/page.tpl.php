@@ -169,6 +169,7 @@
         </div>
 
         <div class="main-container <?php print $container_class; ?>">
+            <p>Diaplay sidebar: <?php print $display_sidebars ?></p>
             <div class="row">
 
                 <section<?php print $content_column_class; ?>>
