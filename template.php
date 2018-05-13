@@ -6,7 +6,9 @@
  */
 
 function jirboot_preprocess_page(&$variables) {
-    print_r($variables['page']->node);
+    if (isset($variables['node'])) {
+        print_r($variables['page']);
+    }
     if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
         $variables['content_column_class'] = ' class="col-sm-8"';
     }
