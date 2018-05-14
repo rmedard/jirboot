@@ -202,9 +202,11 @@
                 <?php if (!isset($display_sidebars)): ?>
                 <div class="col-sm-4" role="complementary">
                     <?php if (!empty($page['jir_horizontal_sidebar'])): ?>
-                        <aside class="row" role="complementary">
-                            <?php print render($page['jir_horizontal_sidebar']); ?>
-                        </aside>
+                        <div class="row" role="complementary">
+                            <aside class="col-sm-12">
+                                <?php print render($page['jir_horizontal_sidebar']); ?>
+                            </aside>
+                        </div>
                     <?php endif; ?>
                     <div class="row">
                         <?php if (!empty($page['sidebar_first'])): ?>
