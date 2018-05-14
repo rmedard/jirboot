@@ -7893,7 +7893,8 @@ a.list-group-item-danger.active:focus {
     width: 100%;
     display: grid;
     grid-template-areas: "a a";
-    grid-gap: 15px;
+    margin-left: 0;
+    margin-right: 0;
   }
   div#jir-footer > div div.jir-footer-block {
     width: 100%;
