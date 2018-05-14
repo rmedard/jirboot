@@ -6,12 +6,12 @@ function handleDeviceChange(deviceMql, $) {
         window.addEventListener('orientationchange', function (event) {
             console.log('I am in...' + window.orientation);
             if (event.orientation === 'landscape'){
-                let footGridParent = $('div#jir-footer > div');
-                footGridParent.removeClass('row');
-                $('div#jir-footer > div > div.jir-footer-block').each(function () {
-                    $(this).removeClass('col-sm-3');
-                });
-                footGridParent.css({ "width": "100%", "display": "grid", "grid-template-areas": "a a", "grid-gap": "15px" });
+                // let footGridParent = $('div#jir-footer > div');
+                // footGridParent.removeClass('row');
+                // $('div#jir-footer > div > div.jir-footer-block').each(function () {
+                //     $(this).removeClass('col-sm-3');
+                // });
+                // footGridParent.css({ "width": "100%", "display": "grid", "grid-template-areas": "a a", "grid-gap": "15px" });
 
 
 
