@@ -7895,12 +7895,12 @@ a.list-group-item-danger.active:focus {
     grid-template-areas: "a a";
     grid-gap: 15px;
   }
-  div#jir-footer > div ::before {
-    display: none;
-  }
   div#jir-footer > div div.jir-footer-block {
     width: 100%;
     float: none;
+  }
+  div#jir-footer > div::before {
+    display: none;
   }
 }
 @media (max-width: 768px) and (orientation: portrait) {
