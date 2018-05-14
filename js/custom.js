@@ -3,18 +3,27 @@ function handleDeviceChange(deviceMql, $) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
-        // $(window).on('orientationchange', function (event) {
-        //     if (event.orientation === 'landscape'){
-        //         let jirFooterBlockMinHeight = 0;
-        //         let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
-        //         jirFooterBlock.each(function () {
-        //             if ($(this).height() > jirFooterBlockMinHeight) {
-        //                 jirFooterBlockMinHeight = $(this).height();
-        //             }
-        //         });
-        //         jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
-        //     }
-        // });
+        $(window).on('orientationchange', function (event) {
+            if (event.orientation === 'landscape'){
+                let footGridParent = $('div#jir-footer > div');
+                footGridParent.removeClass('row');
+                $('div#jir-footer > div > div.jir-footer-block').each(function () {
+                    $(this).removeClass('col-sm-3');
+                });
+                footGridParent.css({ "width": "100%", "display": "grid", "grid-template-areas": "a a", "grid-gap": "15px" });
+
+
+
+                // let jirFooterBlockMinHeight = 0;
+                // let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
+                // jirFooterBlock.each(function () {
+                //     if ($(this).height() > jirFooterBlockMinHeight) {
+                //         jirFooterBlockMinHeight = $(this).height();
+                //     }
+                // });
+                // jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
+            }
+        });
     }
 }
 
