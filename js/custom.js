@@ -3,8 +3,8 @@ function handleDeviceChange(deviceMql, $) {
         $('button#menu-toggle-btn').hide();
     } else {
         $('section#block-menu-menu-jobs-menu > ul.nav').removeClass('nav-tabs nav-justified').addClass('nav-pills');
-        $(window).on('orientationchange', function (event) {
-            console.log('I am in...');
+        $(window).addEventListener('orientationchange', function (event) {
+            console.log('I am in...' + window.orientation);
             if (event.orientation === 'landscape'){
                 let footGridParent = $('div#jir-footer > div');
                 footGridParent.removeClass('row');
