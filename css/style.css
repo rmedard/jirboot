@@ -7994,3 +7994,6 @@ div.jir-pricing-plan div.jir-pricing-price {
   font-size: xx-large;
   background-color: #ecf0f1;
 }
+div.view-employers > div.view-header {
+  text-align: center;
+}
