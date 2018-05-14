@@ -199,16 +199,27 @@
                     <?php print render($page['content']); ?>
                 </section>
 
-                <?php if (!empty($page['sidebar_first']) && !isset($display_sidebars)): ?>
-                    <aside class="col-sm-2" role="complementary">
-                        <?php print render($page['sidebar_first']); ?>
-                    </aside>  <!-- /#sidebar-first -->
-                <?php endif; ?>
+                <?php if (!isset($display_sidebars)): ?>
+                <div class="col-sm-4" role="complementary">
+                    <?php if (!empty($page['jir_horizontal_sidebar'])): ?>
+                        <div class="row">
+                            <?php print render($page['jir_horizontal_sidebar']); ?>
+                        </div>
+                    <?php endif; ?>
+                    <div class="row">
+                        <?php if (!empty($page['sidebar_first'])): ?>
+                            <aside class="col-sm-6" role="complementary">
+                                <?php print render($page['sidebar_first']); ?>
+                            </aside>  <!-- /#sidebar-first -->
+                        <?php endif; ?>
 
-                <?php if (!empty($page['sidebar_second']) && !isset($display_sidebars)): ?>
-                    <aside class="col-sm-2" role="complementary">
-                        <?php print render($page['sidebar_second']); ?>
-                    </aside>  <!-- /#sidebar-second -->
+                        <?php if (!empty($page['sidebar_second'])): ?>
+                            <aside class="col-sm-6" role="complementary">
+                                <?php print render($page['sidebar_second']); ?>
+                            </aside>  <!-- /#sidebar-second -->
+                        <?php endif; ?>
+                    </div>
+                </div>
                 <?php endif; ?>
 
             </div>
