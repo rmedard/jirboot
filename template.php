@@ -16,6 +16,7 @@ function jirboot_preprocess_page(&$variables) {
         $variables['content_column_class'] = ' class="col-sm-12"';
         $variables['container_class'] = 'container-fluid';
         $variables['display_sidebars'] = 0;
+        $variables['hide_banners'] = 0;
     } else {
         if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
             $variables['content_column_class'] = ' class="col-sm-8"';

@@ -103,9 +103,11 @@
                 </button>
             <?php endif; ?>
         </div>
-        <div class="col-sm-9 pull-right" id="desk-banner-region">
-            <?php print render($page['jirheader_banner']); ?>
-        </div>
+        <?php if (!isset($hide_banners)): ?>
+            <div class="col-sm-9 pull-right" id="desk-banner-region">
+                <?php print render($page['jirheader_banner']); ?>
+            </div>
+        <?php endif; ?>
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
             <div class="navbar-collapse collapse mobile-menu"
                  id="navbar-collapse">
@@ -130,6 +132,7 @@
         <?php print render($page['jirheader_banner']); ?>
     </div>
     <div>
+        <?php if (!isset($hide_banners)): ?>
         <div class="super-header">
             <div class="container-fluid">
                 <div class="navbar navbar-static-top navbar-default">
@@ -167,7 +170,7 @@
                 </div>
             </header>
         </div>
-
+        <?php endif; ?>
         <div class="main-container <?php print $container_class; ?>">
             <div class="row">
 
