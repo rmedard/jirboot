@@ -7997,3 +7997,6 @@ div.jir-pricing-plan div.jir-pricing-price {
 div.view-employers > div.view-header {
   text-align: center;
 }
+div.view-testimonials > div.view-header {
+  margin-bottom: 15px;
+}
