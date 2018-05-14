@@ -6,23 +6,7 @@ function handleDeviceChange(deviceMql, $) {
         window.addEventListener('orientationchange', function (event) {
             console.log('I am in...' + window.orientation);
             if (event.orientation === 'landscape'){
-                // let footGridParent = $('div#jir-footer > div');
-                // footGridParent.removeClass('row');
-                // $('div#jir-footer > div > div.jir-footer-block').each(function () {
-                //     $(this).removeClass('col-sm-3');
-                // });
-                // footGridParent.css({ "width": "100%", "display": "grid", "grid-template-areas": "a a", "grid-gap": "15px" });
 
-
-
-                // let jirFooterBlockMinHeight = 0;
-                // let jirFooterBlock = $('div.col-sm-3.jir-footer-block');
-                // jirFooterBlock.each(function () {
-                //     if ($(this).height() > jirFooterBlockMinHeight) {
-                //         jirFooterBlockMinHeight = $(this).height();
-                //     }
-                // });
-                // jirFooterBlock.css('min-height', jirFooterBlockMinHeight);
             }
         });
     }
@@ -48,5 +32,7 @@ jQuery(document).ready(function($) {
     });
 
     $('div.views-exposed-widgets > div#edit-search-employer-wrapper').addClass('col-md-6');
+    $('form.simplenews-unsubscribe > div > button').addClass('btn-sm btn-block');
+    $('form.simplenews-subscribe > div > button').addClass('btn-sm btn-block');
 
 });
