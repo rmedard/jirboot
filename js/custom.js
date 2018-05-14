@@ -37,4 +37,6 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('div.views-exposed-widgets > div#edit-search-employer-wrapper').addClass('col-md-6');
+
 });
