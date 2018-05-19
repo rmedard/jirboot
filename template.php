@@ -46,6 +46,7 @@ function jirboot_preprocess_block(&$variables) {
         $output = '<ul class="nav nav-tabs nav-justified" role="tablist">';
 
         foreach ($jobs_menu as $key => $menu) {
+            $menu['jobs_count'] = 0;
             switch ($menu['link_path']) {
                 case 'jobs/featured':
                     $query1 = new EntityFieldQuery();
