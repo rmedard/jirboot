@@ -105,7 +105,7 @@
   ?>
     <?php if (!isset($hide_application_btn) && $view_mode == 'full'): ?>
         <div class="row">
-            <div class="col-sm-3 col-sm-offset-9"><a href="<?php print $application_url; ?>" class="btn btn-block btn-success btn-sm">Apply for this job</a></div>
+            <div class="col-sm-3 col-sm-offset-9"><a href="<?php print $application_url; ?>" target="<?php print $target_page; ?>" class="btn btn-block btn-success btn-sm">Apply for this job</a></div>
         </div>
     <?php endif; ?>
   <?php
