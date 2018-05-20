@@ -39,7 +39,7 @@ function jirboot_preprocess_page(&$variables) {
 
 function jirboot_preprocess_node(&$variables) {
     if ($variables['node']->type == 'job') {
-     var_dump($variables['node']->field_application_form_type['und']['tid']);
+     var_dump($variables['node']->field_application_form_type['und']->tid);
     }
 }
 
