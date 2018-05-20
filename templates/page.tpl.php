@@ -197,9 +197,6 @@
                         <ul class="action-links"><?php print render($action_links); ?></ul>
                     <?php endif; ?>
                     <?php print render($page['content']); ?>
-                    <div class="row">
-                        <div class="col-sm-3"><a href="#" class="btn btn-block btn-success btn-sm">Apply for this job</a></div>
-                    </div>
                 </section>
 
                 <?php if (!isset($display_sidebars)): ?>
