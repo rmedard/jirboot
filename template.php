@@ -38,7 +38,9 @@ function jirboot_preprocess_page(&$variables) {
 }
 
 function jirboot_preprocess_node(&$variables) {
-    var_dump($variables['node']->type);
+    if ($variables['node']->type == 'job') {
+     var_dump($variables['node']->field_application_form_type);
+    }
 }
 
 function jirboot_preprocess_block(&$variables) {
