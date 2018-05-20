@@ -38,7 +38,7 @@ function jirboot_preprocess_page(&$variables) {
 }
 
 function jirboot_preprocess_node(&$variables) {
-
+    var_dump($variables['node']->type);
 }
 
 function jirboot_preprocess_block(&$variables) {

@@ -104,9 +104,9 @@
     print render($content);
   ?>
     <?php if ($view_mode == 'full'): ?>
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-9"><a href="#" class="btn btn-block btn-success btn-sm">Apply for this job</a></div>
-    </div>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-9"><a href="#" class="btn btn-block btn-success btn-sm">Apply for this job</a></div>
+        </div>
     <?php endif; ?>
   <?php
     // Only display the wrapper div if there are tags or links.
