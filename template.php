@@ -42,10 +42,12 @@ function jirboot_preprocess_node(&$variables)
 //        var_dump($variables['node']->field_application_form_type['und'][0]['tid']);
         switch (intval($job_node->field_application_form_type['und'][0]['tid'])) {
             case 26:
-                $variables['application_url'] = 'apply-now?field_job=' . $job_node->nid;
+                $variables['application_url'] = '/apply-now?field_job=' . $job_node->nid;
                 break;
             case 28:
-                $variables['application_url'] = $job_node->field_external_application_link;
+                var_dump($job_node->field_external_application_link);
+//                $variables['application_url'] = $job_node->field_external_application_link;
+                $variables['application_url'] = '#';
                 break;
             default:
                 $variables['hide_application_btn'] = 0;
