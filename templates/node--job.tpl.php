@@ -103,7 +103,7 @@
     hide($content['field_tags']);
     print render($content);
   ?>
-    <?php if ($view_mode == 'full') ?>
+    <?php if ($view_mode == 'full'): ?>
     <div class="row">
         <div class="col-sm-3 col-sm-offset-9"><a href="#" class="btn btn-block btn-success btn-sm">Apply for this job</a></div>
     </div>
