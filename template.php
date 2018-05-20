@@ -37,6 +37,10 @@ function jirboot_preprocess_page(&$variables) {
     }
 }
 
+function jirboot_preprocess_node(&$variables) {
+    var_dump($variables['node']);
+}
+
 function jirboot_preprocess_block(&$variables) {
 //    var_dump('ID: ' . $variables['block']->delta . ' Title: ' . $variables['block']->subject);
     if ($variables['block']->delta == 'menu-jobs-menu') {
