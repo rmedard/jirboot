@@ -7931,7 +7931,7 @@ body header#navbar {
 #super-container div.main-container {
   padding-top: 15px;
 }
-section#block-managedad > div.adsense-placeholder > div.adsense {
+section#block-managedad {
   float: right;
 }
 section.block .block-title {
