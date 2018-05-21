@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
         }
     });
     $('input#edit-combine-search').attr('placeholder', 'Job title or company name e.g. manager, tigo, ...');
-    $('a.apply-btn').removeClass('btn-link', 'btn-').addClass('btn-access btn-sm');
+    $('a.apply-btn').removeClass('btn-link btn-').addClass('btn-success btn-sm');
     $('div.views-exposed-widgets > div#edit-search-employer-wrapper').addClass('col-md-6');
     $('form.simplenews-unsubscribe > div > button').addClass('btn-sm btn-block');
     $('form.simplenews-subscribe > div > button').addClass('btn-sm btn-block');
