@@ -258,6 +258,7 @@
         </div>
         <div class="row" id="jir-main-footer">
             <div class="container">
+                <a href="https://seal.beyondsecurity.com/vulnerability-scanner-verification/www.jobinrwanda.com"><img src="https://seal.beyondsecurity.com/verification-images/www.jobinrwanda.com/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
                 <?php print render($page['footer']); ?>
             </div>
         </div>
