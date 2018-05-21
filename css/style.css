@@ -7931,9 +7931,6 @@ body header#navbar {
 #super-container div.main-container {
   padding-top: 15px;
 }
-section#block-managedad > div > div.adsense {
-  float: right;
-}
 section.block .block-title {
   font-size: 22px;
   text-align: center;
