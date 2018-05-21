@@ -7817,7 +7817,7 @@ a.list-group-item-danger.active:focus {
 .alert-warning {
   background-color: #fad9a4;
   border-color: #fad9a4;
-  color: #F39C12;
+  color: #976008;
 }
 /* wider devices (tablets, 768px and up) */
 @media (min-width: 768px) {
