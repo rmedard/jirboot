@@ -7815,8 +7815,8 @@ a.list-group-item-danger.active:focus {
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 .alert-warning {
-  background-color: #f8c573;
-  border-color: #f8c573;
+  background-color: #fad9a4;
+  border-color: #fad9a4;
   color: #F39C12;
 }
 /* wider devices (tablets, 768px and up) */
