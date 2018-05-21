@@ -7819,6 +7819,21 @@ a.list-group-item-danger.active:focus {
   border-color: #fad9a4;
   color: #976008;
 }
+.alert-success {
+  background-color: #84dc4f;
+  border-color: #84dc4f;
+  color: #122507;
+}
+.alert-info {
+  background-color: #b6daf2;
+  border-color: #b6daf2;
+  color: #196090;
+}
+.alert-danger {
+  background-color: #f8c9c4;
+  border-color: #f8c9c4;
+  color: #a82315;
+}
 /* wider devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #super-container {
