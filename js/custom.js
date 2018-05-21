@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
             }
         }
     });
-
+    $('input#edit-combine-search').attr('placeholder', 'Job title or company name e.g. manager, tigo, ...');
     $('div.views-exposed-widgets > div#edit-search-employer-wrapper').addClass('col-md-6');
     $('form.simplenews-unsubscribe > div > button').addClass('btn-sm btn-block');
     $('form.simplenews-subscribe > div > button').addClass('btn-sm btn-block');

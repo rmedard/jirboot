@@ -7838,7 +7838,7 @@ a.list-group-item-danger.active:focus {
     width: 100%;
     max-height: '110px';
   }
-  div#edit-combine-wrapper {
+  div#edit-combine-search-wrapper {
     width: 60%;
   }
 }
