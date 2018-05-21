@@ -4,6 +4,11 @@
  * Modify this file to override the Bootstrap Framework variables. You can copy
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
+.alert-warning {
+  background-color: #f6b754;
+  border-color: #f6b754;
+  color: #F39C12;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
