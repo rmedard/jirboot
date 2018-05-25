@@ -53,6 +53,8 @@ function jirboot_preprocess_node(&$variables)
                     $variables['hide_application_btn'] = 0;
                     break;
             }
+        } else {
+            $variables['hide_application_btn'] = 0;
         }
     }
 }
