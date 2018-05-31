@@ -82,6 +82,10 @@ function jirboot_preprocess_block(&$variables)
                             36,
                         ], 'IN')
                         ->count()->execute();
+                    $menu['jobs_count'] = $featured;
+                    break;
+                case 'jobs/all':
+                    $query2 = new EntityFieldQuery();
                     $alljobs = $query2->entityCondition('entity_type', 'node')
                         ->entityCondition('bundle', 'job')
                         ->propertyCondition('status', NODE_PUBLISHED)
@@ -147,7 +151,7 @@ function jirboot_preprocess_block(&$variables)
             }
 
             if (intval($menu['jobs_count']) > 0) {
-                $output .= '<li role="presentation"><a href="/' . $menu['link_path'] . '" role="tab" aria-controls="' . strtolower($menu['link_title']) . '">' . $menu['link_title'] . '</a> <span class="badge" style="white-space: nowrap">' . $menu['jobs_count'] . '</span></li>';
+                $output .= '<li role="presentation" style="white-space: nowrap"><a href="/' . $menu['link_path'] . '" role="tab" aria-controls="' . strtolower($menu['link_title']) . '">' . $menu['link_title'] . '</a> <span class="badge">' . $menu['jobs_count'] . '</span></li>';
             }
         }
         $output .= '</ul>';
