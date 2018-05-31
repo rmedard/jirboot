@@ -151,7 +151,7 @@ function jirboot_preprocess_block(&$variables)
             }
 
             if (intval($menu['jobs_count']) > 0) {
-                $output .= '<li role="presentation" style="white-space: nowrap"><a href="/' . $menu['link_path'] . '" role="tab" aria-controls="' . strtolower($menu['link_title']) . '">' . $menu['link_title'] . '</a> <span class="badge">' . $menu['jobs_count'] . '</span></li>';
+                $output .= '<li role="presentation" style="white-space: nowrap"><a href="/' . $menu['link_path'] . '" role="tab" aria-controls="' . strtolower($menu['link_title']) . '">' . $menu['link_title'] . ' <span class="badge">' . $menu['jobs_count'] . '</span></a></li>';
             }
         }
         $output .= '</ul>';
