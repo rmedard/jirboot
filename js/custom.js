@@ -24,6 +24,21 @@ jQuery(document).ready(function($) {
             }
         }
     });
+
+    const table = $('table');
+
+    if (!table.hasClass('table')) {
+        table.addClass('table');
+    }
+
+    if (!table.hasClass('table-bordered')) {
+        table.addClass('table-bordered');
+    }
+
+    if (!table.hasClass('table-condensed')) {
+        table.addClass('table-condensed');
+    }
+
     $('input#edit-combine-search').attr('placeholder', 'Job title or company name e.g. manager, tigo, ...');
     $('a.apply-btn').removeClass('btn-link btn-').addClass('btn-success btn-sm btn-block');
     $('div.views-exposed-widgets > div#edit-search-employer-wrapper').addClass('col-md-6');
