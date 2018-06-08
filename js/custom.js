@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
         }
     });
 
-    const table = $('table');
+    const table = $('section#block-system-main table');
 
     if (!table.hasClass('table')) {
         table.addClass('table');
@@ -37,6 +37,10 @@ jQuery(document).ready(function($) {
 
     if (!table.hasClass('table-condensed')) {
         table.addClass('table-condensed');
+    }
+
+    if (!table.hasClass('table-striped')) {
+        table.addClass('table-striped');
     }
 
     $('input#edit-combine-search').attr('placeholder', 'Job title or company name e.g. manager, tigo, ...');
