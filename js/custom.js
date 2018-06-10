@@ -27,22 +27,8 @@ jQuery(document).ready(function($) {
 
     const table = $('section#block-system-main table');
     table.removeAttr('style');
-
-    if (!table.hasClass('table')) {
-        table.addClass('table');
-    }
-
-    if (!table.hasClass('table-bordered')) {
-        table.addClass('table-bordered');
-    }
-
-    if (!table.hasClass('table-condensed')) {
-        table.addClass('table-condensed');
-    }
-
-    if (!table.hasClass('table-striped')) {
-        table.addClass('table-striped');
-    }
+    table.removeClass();
+    table.addClass('table table-bordered table-condensed table-striped');
 
     $('input#edit-combine-search').attr('placeholder', 'Job title or company name e.g. manager, tigo, ...');
     $('a.apply-btn').removeClass('btn-link btn-').addClass('btn-success btn-sm btn-block');
