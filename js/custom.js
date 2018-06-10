@@ -26,6 +26,7 @@ jQuery(document).ready(function($) {
     });
 
     const table = $('section#block-system-main table');
+    table.removeAttr('style');
 
     if (!table.hasClass('table')) {
         table.addClass('table');
