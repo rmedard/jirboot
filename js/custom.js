@@ -25,6 +25,8 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('form.simplenews-subscribe input').addClass('input-sm');
+
     const table = $('section#block-system-main table');
     table.removeAttr('style');
     table.removeClass();
