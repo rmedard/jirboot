@@ -7919,6 +7919,9 @@ body header#navbar {
   background-color: white;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33);
 }
+label.error {
+  color: #E74C3C;
+}
 #super-container div.super-header {
   background: #ecf0f1;
 }
