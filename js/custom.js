@@ -38,4 +38,5 @@ jQuery(document).ready(function($) {
     $('form.simplenews-unsubscribe > div > button').addClass('btn-sm btn-block');
     $('form.simplenews-subscribe > div > button').addClass('btn-sm btn-block');
 
+    $('div#field-employer-add-more-wrapper > div.form-item').append('<a href="/node/add/employer">Can\'t find an employer? Create one.</a>');
 });
