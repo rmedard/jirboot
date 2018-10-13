@@ -107,7 +107,8 @@ function jirboot_preprocess_block(&$variables)
                     $consultancy = $query8->entityCondition('entity_type', 'node')
                         ->entityCondition('bundle', 'job')
                         ->propertyCondition('status', NODE_PUBLISHED)
-                        ->fieldCondition('field_offer_type', 'value', 'Consultancy')
+//                        ->fieldCondition('field_offer_type', 'value', 'Consultancy')
+                        ->addTag('consultancy_or_freelance')
                         ->count()->execute();
                     $menu['jobs_count'] = $consultancy;
                     break;
@@ -175,4 +176,17 @@ function jirboot_preprocess_block(&$variables)
         $output .= '</div></div>';
         $variables['content'] = $output;
     }
+}
+
+/**
+ * Implements hook_query_TAG_alter().
+ */
+function jirboot_query_consultancy_or_freelance_alter(QueryAlterableInterface $query) {
+    $query->leftjoin('field_data_field_offer_type', 'o', 'nid = o.entity_id');
+    $query->leftjoin('field_data_field_contrat_type', 'c', 'nid = c.entity_id');
+    $query->leftjoin('taxonomy_term_data', 'n', 'n.tid = c.field_contrat_type_tid');
+    $or = db_or();
+    $or->condition('o.field_offer_type_value', 'Consultancy')
+        ->condition('n.name', 'Freelance');
+    $query->condition($or);
 }
