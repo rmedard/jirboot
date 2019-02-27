@@ -44,5 +44,8 @@ jQuery(document).ready(function($) {
     if (!topBannerImage.hasClass('img-responsive')) {
         topBannerImage.addClass('img-responsive');
     }
+    if (!topBannerImage.hasClass('pull-right')) {
+        topBannerImage.addClass('pull-right');
+    }
 
 });
