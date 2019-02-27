@@ -39,4 +39,10 @@ jQuery(document).ready(function($) {
     $('form.simplenews-subscribe > div > button').addClass('btn-sm btn-block');
 
     $('div#field-employer-add-more-wrapper > div.form-item').append('<a href="/node/add/employer">Can\'t find an employer? Create one.</a>');
+
+    const topBannerImage = $('div.field-name-field-banner-code img');
+    if (!topBannerImage.hasClass('img-responsive')) {
+        topBannerImage.addClass('img-responsive');
+    }
+
 });
