@@ -7,6 +7,8 @@
 
 function jirboot_preprocess_page(&$variables)
 {
+    dpm($variables);
+
     $full_pages = array('services', 'post-advert');
     $management_pages = array('job-applications', 'jobs', 'employers', 'banners', 'faq-manage', 'testimonials-manage', 'news-management');
 
@@ -33,8 +35,6 @@ function jirboot_preprocess_page(&$variables)
             $variables['container_class'] = 'container';
         }
     }
-
-    var_dump($variables);
 
     if($variables['node']->field_hide_title['und'][0]['value']) {
         $variables['title'] = NULL;
