@@ -262,5 +262,5 @@
             </div>
         </div>
     </footer>
-    <?php dpm(get_defined_vars()); ?>
+    <?php dpm($page); ?>
 <?php endif; ?>
