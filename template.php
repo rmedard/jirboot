@@ -34,7 +34,7 @@ function jirboot_preprocess_page(&$variables)
         }
     }
 
-    dpm($variables);
+    var_dump($variables);
 
     if($variables['node']->field_hide_title['und'][0]['value']) {
         $variables['title'] = NULL;
