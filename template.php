@@ -33,6 +33,8 @@ function jirboot_preprocess_page(&$variables)
             $variables['container_class'] = 'container';
         }
     }
+
+    $variables['title'] = null;
 }
 
 function jirboot_preprocess_node(&$variables)
