@@ -262,5 +262,4 @@
             </div>
         </div>
     </footer>
-    <?php dpm($page); ?>
 <?php endif; ?>
