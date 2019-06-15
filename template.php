@@ -8,6 +8,7 @@
 function jirboot_preprocess_page(&$variables)
 {
     dpm($variables);
+    die();
 
     $full_pages = array('services', 'post-advert');
     $management_pages = array('job-applications', 'jobs', 'employers', 'banners', 'faq-manage', 'testimonials-manage', 'news-management');
