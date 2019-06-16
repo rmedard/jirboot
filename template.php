@@ -7,7 +7,7 @@
 
 function jirboot_preprocess_page(&$variables)
 {
-    $variables['show_title'] = true;
+    $variables['show_title'] = false;
     drupal_set_message(current_path(), 'status');
     $full_pages = array('services', 'post-advert');
     $management_pages = array('job-applications', 'jobs', 'employers', 'banners', 'faq-manage', 'testimonials-manage', 'news-management');
@@ -36,8 +36,12 @@ function jirboot_preprocess_page(&$variables)
         }
     }
 
-    if (drupal_is_front_page() or preg_match('(\/jobs\/.*)', current_path())) {
-        $variables['show_title'] = false;
+//    if (drupal_is_front_page() or preg_match('(\/jobs\/.*)', current_path())) {
+//        $variables['show_title'] = false;
+//    }
+
+    if (!empty($variables['node']) && $variables['node']->type == 'job') {
+        $variables['show_title'] = true;
     }
 }
 
