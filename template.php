@@ -33,7 +33,10 @@ function jirboot_preprocess_page(&$variables)
             $variables['container_class'] = 'container';
         }
     }
-    $variables['show_title'] = false;
+
+    if (drupal_is_front_page() or preg_match(current_path(), '(\/jobs\/.*)')) {
+        $variables['show_title'] = false;
+    }
 }
 
 function jirboot_preprocess_node(&$variables)
