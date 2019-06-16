@@ -40,7 +40,8 @@ function jirboot_preprocess_page(&$variables)
 //        $variables['show_title'] = false;
 //    }
 
-    if (!empty($variables['node']) && $variables['node']->type == 'job') {
+    $show_title_nodes = array('job', 'employer', 'news');
+    if (!empty($variables['node']) && in_array($variables['node']->type, $show_title_nodes)) {
         $variables['show_title'] = true;
     }
 }
