@@ -34,7 +34,7 @@ function jirboot_preprocess_page(&$variables)
         }
     }
 
-    if (drupal_is_front_page() or preg_match(current_path(), '(\/jobs\/.*)')) {
+    if (drupal_is_front_page() or preg_match('(\/jobs\/.*)', current_path())) {
         $variables['show_title'] = false;
     }
 }
