@@ -8012,6 +8012,7 @@ body header#navbar {
 }
 body .page-header {
   text-align: center;
+  margin-bottom: 0;
 }
 #super-container div.super-header {
   background: #ecf0f1;
