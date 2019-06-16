@@ -8,7 +8,6 @@
 function jirboot_preprocess_page(&$variables)
 {
     $variables['show_title'] = false;
-    drupal_set_message(current_path(), 'status');
     $full_pages = array('services', 'post-advert');
     $management_pages = array('job-applications', 'jobs', 'employers', 'banners', 'faq-manage', 'testimonials-manage', 'news-management');
 
