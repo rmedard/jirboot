@@ -169,9 +169,17 @@ section.block {
 }
 
 ul.media-list {
-    li.media > div.media-left {
-        width: 14%;
+    li.media {
+        display: flex;
+        align-items: center;
+        div.media-body {
+            width: 80%;
+        }
     }
+
+    //li.media > div.media-left {
+    //    width: 14%;
+    //}
     li.media:not(:last-child) {
         padding-bottom: 5px;
         border-bottom: solid 2px @gray-light;
