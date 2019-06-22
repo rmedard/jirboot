@@ -1086,7 +1086,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #d90a1c;
+  color: #a80816;
   text-decoration: none;
 }
 a:focus {
@@ -3503,7 +3503,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #d90a1c;
+  color: #a80816;
   text-decoration: none;
   background-color: transparent;
 }
