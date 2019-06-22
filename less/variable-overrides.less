@@ -8,6 +8,18 @@
 // Set the proper directory for the Bootstrap Glyphicon font.
 @icon-font-path: '../bootstrap/fonts/';
 
+@brand-primary:         lighten(#000000, 13.5%);
+@brand-success:         #219f49;
+@brand-info:            #d90a1c;
+
+//** Global textual link color.
+@link-color:            @brand-info;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      @link-color;
+//** Link hover decoration.
+@link-hover-decoration: none;
+
+
 .alert-warning {
     background-color: lighten(@brand-warning, 30%);
     border-color: lighten(@brand-warning, 30%);
