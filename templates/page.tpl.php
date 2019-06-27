@@ -137,7 +137,6 @@
             <div class="container-fluid">
                 <div class="navbar navbar-static-top navbar-default">
                     <div class="container">
-                        <!--                    <div class="navbar-header">-->
                         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
                             <div class="navbar-collapse collapse desk-menu"
                                  id="navbar-collapse">
@@ -154,7 +153,6 @@
                                 </nav>
                             </div>
                         <?php endif; ?>
-                        <!--                    </div>-->
                     </div>
                 </div>
             </div>
@@ -229,7 +227,6 @@
     </div>
 </div>
 <?php if (!empty($page['footer'])): ?>
-    <!--    <footer class="footer --><?php //print $container_class; ?><!--">-->
     <footer class="footer container-fluid">
         <div class="container" id="jir-footer">
             <div class="row">
