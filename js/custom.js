@@ -25,6 +25,13 @@ jQuery(document).ready(function($) {
         }
     });
 
+    //Hide super featured jobs box when empty
+    const superFeaturedBox = $('div.super-featured-jobs');
+    if ($.trim(superFeaturedBox.text()) === '') {
+        superFeaturedBox.hide();
+    }
+
+
     $('form.simplenews-subscribe input').addClass('input-sm');
 
     const table = $('section#block-system-main table');
