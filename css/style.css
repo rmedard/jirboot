@@ -8032,6 +8032,12 @@ body .page-header {
   text-align: center;
   margin-bottom: 0;
 }
+body div.region-jir-horizontal-sidebar section {
+  margin-bottom: 10px;
+}
+body div.region-jir-horizontal-sidebar section.well .block-title {
+  margin-top: 0;
+}
 #super-container div.super-header {
   background: #eeeeee;
 }
