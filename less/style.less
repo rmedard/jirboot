@@ -132,7 +132,6 @@
             background: white;
         }
     }
-
 }
 
 body {
@@ -140,6 +139,21 @@ body {
         max-height: @header-height;
         background-color: white;
         box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.33);
+    }
+    .page-header {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    div.region-jir-horizontal-sidebar {
+        section {
+            margin-bottom: 10px;
+        }
+        section.well {
+            .block-title {
+                margin-top: 0;
+            }
+        }
     }
 }
 
@@ -166,9 +180,17 @@ section.block {
 }
 
 ul.media-list {
-    li.media > div.media-left {
-        width: 14%;
+    li.media {
+        display: flex;
+        align-items: center;
+        div.media-body {
+            width: 80%;
+        }
     }
+
+    //li.media > div.media-left {
+    //    width: 14%;
+    //}
     li.media:not(:last-child) {
         padding-bottom: 5px;
         border-bottom: solid 2px @gray-light;

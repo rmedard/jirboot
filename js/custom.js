@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
         superFeaturedBox.hide();
     }
 
-
+    $('section.block-simplenews').addClass('well well-sm');
     $('form.simplenews-subscribe input').addClass('input-sm');
 
     const table = $('section#block-system-main table');
