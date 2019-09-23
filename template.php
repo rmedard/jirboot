@@ -10,7 +10,7 @@ function jirboot_preprocess_page(&$variables)
     $variables['show_title'] = false;
     $full_pages = array('services', 'post-advert');
     $management_pages = array('job-applications', 'jobs', 'employers', 'banners', 'faq-manage', 'testimonials-manage', 'news-management');
-
+    watchdog('Domain', base_path(), $variables = NULL, $severity = WATCHDOG_NOTICE, $link = NULL);
     if (in_array(current_path(), $full_pages)) {
         $variables['content_column_class'] = ' class="col-sm-12"';
         $variables['display_sidebars'] = 0;
