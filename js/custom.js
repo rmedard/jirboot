@@ -11,9 +11,6 @@ jQuery(document).ready(function($) {
     deviceMql.addListener(handleDeviceChange);
     handleDeviceChange(deviceMql, $);
 
-    // Disable ajax upload for file field
-    drupal_add_js("jQuery(function() { jQuery('#edit-field-cv-resume-attachment-und-0-upload :submit').unbind(); });", 'inline');
-
     const pathName = window.location.pathname.toString();
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         let link = $(this).find('a').attr('href');
