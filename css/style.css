@@ -8038,6 +8038,9 @@ body div.region-jir-horizontal-sidebar section {
 body div.region-jir-horizontal-sidebar section.well .block-title {
   margin-top: 0;
 }
+body div {
+  overflow-wrap: break-word;
+}
 #super-container div.super-header {
   background: #eeeeee;
 }
