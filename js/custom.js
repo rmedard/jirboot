@@ -40,7 +40,6 @@ jQuery(document).ready(function($) {
     table.addClass('table table-bordered table-condensed table-striped');
 
     $('input#edit-combine-search').attr('placeholder', 'Job title or company name e.g. manager, tigo, ...');
-    $('a.apply-btn').removeClass('btn-link btn-').addClass('btn-success btn-sm btn-block');
     $('div.views-exposed-widgets > div#edit-search-employer-wrapper').addClass('col-md-6');
     $('form.simplenews-unsubscribe > div > button').addClass('btn-sm btn-block');
     $('form.simplenews-subscribe > div > button').addClass('btn-sm btn-block');
