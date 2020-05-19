@@ -66,10 +66,14 @@
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
     <?php print $scripts; ?>
-    <noscript>
-        This page needs JavaScript activated to work.
-        <style>div { display:none; }</style>
-    </noscript>
+    <?php if ($check_js_enabled): ?>
+        <noscript>
+            This page needs JavaScript activated to work.
+            <style>div {
+                    display: none;
+                }</style>
+        </noscript>
+    <?php endif; ?>
 </head>
 <body<?php print $body_attributes; ?>>
 <div id="skip-link">

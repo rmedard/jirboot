@@ -5,6 +5,17 @@
  * The primary PHP file for this theme.
  */
 
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function jirboot_preprocess_html(&$variables)
+{
+    $variables['check_js_enabled'] = false;
+    if ($variables['node']->type == 'job') {
+        $variables['check_js_enabled'] = true;
+    }
+}
+
 function jirboot_preprocess_page(&$variables)
 {
     $full_pages = array('services', 'post-advert');
