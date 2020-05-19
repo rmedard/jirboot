@@ -12,7 +12,6 @@ function jirboot_preprocess_html(&$variables)
 {
     $variables['check_js_enabled'] = false;
     if (substr(current_path(), 0, strlen('node/')) === 'node/') {
-        dpm($variables['node']);
         $variables['check_js_enabled'] = true;
     }
 }
