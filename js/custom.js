@@ -7,11 +7,15 @@ function handleDeviceChange(deviceMql, $) {
 }
 
 jQuery(document).ready(function($) {
+    const pathName = window.location.pathname.toString();
+    // if (pathName.startsWith('/job/')) {
+    //     Cookies.set('name', 'value', { expires: 7, path: '' });
+    // }
+
     let deviceMql = window.matchMedia("(min-width: 768px)");
     deviceMql.addListener(handleDeviceChange);
     handleDeviceChange(deviceMql, $);
 
-    const pathName = window.location.pathname.toString();
     $('section#block-menu-menu-jobs-menu > ul.nav > li').each(function (index, value) {
         let link = $(this).find('a').attr('href');
         if (pathName === '/'){
