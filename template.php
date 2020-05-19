@@ -11,7 +11,7 @@
 function jirboot_preprocess_html(&$variables)
 {
     $variables['check_js_enabled'] = false;
-    if ($variables['node']->type == 'job') {
+    if (substr_compare(current_path(), 'job/', 0, strlen('job/')) === 0) {
         $variables['check_js_enabled'] = true;
     }
 }
